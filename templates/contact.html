@@ -1,0 +1,49 @@
+{%extends 'homepage.html'%}
+{%load static%}
+{%block content%}
+
+{% include 'include/header.html' %}
+    <!-- header end -->
+
+    <!-- header end -->
+
+
+    <main class="contactContainer">
+        <div class="contactTitle">
+            <h1>{{contact.title}}</h1>
+
+            <a href="https://api.whatsapp.com/send/?phone=709113206&text&type=phone_number&app_absent=0">
+                <div>
+                    <img width="32px" src="{% static 'assets/icons/Group (2).svg' %}" alt="">
+                    <p>+996 709 113 206</p>
+                </div>
+            </a>
+
+            <div>
+                <img width="32px" src="{% static 'assets/icons/Group 244.svg' %}" alt="">
+                <p>+996 709 113 206</p>
+            </div>
+        </div>
+        <div class="contactTitle">
+            <h1>{{contact.title2}}</h1>
+            <a href="https://www.instagram.com/alaget_taxi/">
+                <div>
+
+                    <img width="32px" src="{% static 'assets/icons/Vector — копия 2.svg' %}" alt="">
+                    <p style="color: black;">alaget_taxi</p>
+
+                </div>
+            </a>
+
+            <div>
+                <img width="32px" src="{% static 'assets/icons/Vector — копия 3.svg' %}" alt="">
+                <p>Алагет Такси</p>
+            </div>
+        </div>
+    </main>
+    <!-- preFooter end -->
+ 
+
+{% include 'include/footer.html' %}
+
+{%endblock%}

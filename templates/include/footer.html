@@ -1,0 +1,60 @@
+{% load static %}
+
+<footer class="footer">
+    <div class="footerContainer">
+      <nav>
+        <ul>
+          <a href="{% url 'index' %}">
+            <li class="active">{{base.title1}}</li>
+          </a>
+          <a href="{% url 'taxi' %}">
+            <li>{{base.title2}}</li>
+          </a>
+          <a href="{% url 'cargo' %}">
+            <li>{{base.title3}}</li>
+          </a>
+          <a href="{% url 'delivery' %}">
+            <li>{{base.title4}}</li>
+          </a>
+          <a href="{% url 'betaxist' %}">
+            <li>{{base.title8}}</li>
+          </a>
+          <a href="{% url 'partners' %}">
+            <li>{{base.title9}}</li>
+          </a>
+        </ul>
+        <div class="socialMedia">
+          <a href="https://www.instagram.com/alaget_taxi/"><div class="iconItem">
+            <img src="{% static 'assets/icons/иконки (1).svg' %}" alt="" />
+          </div></a>
+          <div class="iconItem">
+            <img src="{% static 'assets/icons/иконки ФБ.svg' %}" alt="" />
+          </div>
+        </div>
+        <div class="socialMedia">
+          <div class="iconItem">
+            <img src="{% static 'assets/icons/Vector.svg' %}" alt="" />
+            <p>App store</p>
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=com.alaget.taxi2&pcampaignid=web_share"><div class="iconItem" >
+            <img
+              src="{% static 'assets/icons/googleplay.svg' %}"
+              alt="" />
+            <p>Google play</p>
+          </div></a>
+        </div>
+      </nav>
+      <p>
+        {{base.descriptions}}
+      </p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 1370 2" fill="none">
+        <path d="M1370 1H0" stroke="#F5B324" />
+      </svg>
+      <div class="lust">
+        <p>© 2023 Region Group.</p>
+        <a href="{% url 'soglashenie' %}"><p>{{base.req}}</p></a>
+        <a href="{% url 'politikConfidital' %}"><p>{{base.req2}}</p></a>
+        <a href="{% url 'LicenseAgreement' %}"><p>{{base.req3}}</p></a>
+      </div>
+    </div>
+  </footer>

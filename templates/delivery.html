@@ -1,0 +1,137 @@
+{%extends 'homepage.html'%}
+{%load static%}
+{%block content%}
+
+{% include 'include/header.html' %}
+  <!-- header end -->
+
+  <!-- header end -->
+  <!-- main start -->
+  <main id="main" class="main">
+    <img id="myElement" class="Mainbackround" src="{{delivery.banner_image.url}}" alt="" />
+    <div class="overlay"></div>
+    <div class=" taxi mainTitle">
+      <h2 class="yellow">{{delivery.title}}</h2>
+
+      <h3 class="white">
+        {{delivery.descriptions}}
+      </h3>
+      <div class="mainButton borderYellow"><a href="https://play.google.com/store/apps/details?id=com.alaget.taxi2&pcampaignid=web_share">{{settings.install}}</a></div>
+    </div>
+    <div style="width: 100%;"></div>
+    <div class="mainCarImage">
+
+    </div>
+  </main>
+  <!-- main end -->
+  <section class="cardgoProof deliveryFlex">
+    <div class="leftInfo">
+      <h1 style="font-size: 48px;">{{delivery.trust_title}}</h1>
+      <br>
+      <br>
+      <div class="cardFlex">
+        <img height="40px" src="{% static 'assets/icons/_2254536808176.svg' %}" alt="">
+        <p>{{delivery.trust_descriptions}}</p>
+      </div>
+      <br>
+      <div class="cardFlex">
+        <img height="40px" src="{% static 'assets/icons/_2254536808176.svg' %}" alt="">
+        <p>{{delivery.trust_descriptions2}}</p>
+      </div>
+    </div>
+    <div class="rightInfo">
+      <img src="{{delivery.trust_image.url}}" alt="">
+    </div>
+  </section>
+  <!-- service start -->
+  <section class="darkSection">
+    <section class="cardgoProof">
+      <h1 class="">{{favorabledeliverys.title_base}}</h1>
+      <br>
+      <br>
+      <div class="cardgoProofContiner">
+        {% for favorabledelivery in favorabledelivery %}
+        <div class="cargoCard">
+          <div><img src="{{favorabledelivery.image.url}}" alt=""></div>
+          <h1>{{favorabledelivery.title}}</h1>
+          <h2 class="white">{{favorabledelivery.descriptions}}</h2>
+  
+        </div>
+        {% endfor %}
+      </div>
+      <div class="centerChild">
+        <button class="orangeBGbutton"> <a href="https://play.google.com/store/apps/details?id=com.alaget.taxi2&pcampaignid=web_share">{{settings.install}}</a></button>
+
+      </div>
+      
+    </section>
+  </section>
+
+  <!-- service end -->
+  <br><br>
+
+  <section class="instructionSection">
+    <h1>{{taxi.title_order2}}</h1>
+    <br><br><br>
+    <div class="instructionContainer">
+      {% for orderintercity in orderintercity %}
+      <div class="instructionCard Dark">
+        <div class="instrukionImage"><img src="{{orderintercity.image.url}}" alt=""></div>
+        <h1 class="white">
+          <div class="stepItem white">
+            <div>{{orderintercity.numbers}}</div>
+          </div>{{orderintercity.title}}
+        </h1>
+        <p class='white'>{{orderintercity.descriptions}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  <!-- Proof start -->
+  <section class="Proof">
+    <div class="ProofContiner">
+      <h1>{{whys.why}}</h1>
+      <br />
+      <br />
+      <div class="proofList">
+        {% for why in why %}
+        <div class="proofListItem">
+          <div class="proofItemTop">
+            <h1>{{why.title}}</h1>
+            <img src="{{why.image.url}}" alt="" />
+          </div>
+          <br />
+          <div class="proofItemMain">
+            <p>{{why.descriptions}}
+            </p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <!-- Proof end -->
+  <!-- preFooter start -->
+  <section class="preFooter">
+    <div class="taxi preFooterLeft">
+      <h1>{{earn.title}}</h1>
+
+      <br />
+      <p>{{earn.descriptions}}</p>
+      <br />
+      <button class="orangeBGbutton"> <a href="https://play.google.com/store/apps/details?id=com.alaget.taxi2&pcampaignid=web_share">{{settings.install}}</a></button>
+
+    </div>
+    <div style="width: 100%;"></div>
+    <div class="preFooterRigth">
+      <div class="taxiPreFooterImg">
+        <img src="{{earn.image.url}}" alt="" />
+      </div>
+    </div>
+  </section>
+  <!-- preFooter end -->
+  
+
+{% include 'include/footer.html' %}
+
+{%endblock%}

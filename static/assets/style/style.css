@@ -1,0 +1,1951 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Linear+B&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/gilroy/Gilroy-Light.otf);
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/gilroy/Gilroy-ExtraBold.otf);
+    font-weight: bold;
+}
+.loacithionBth{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #F8BF00;
+    background: rgba(0, 0, 0, 0);
+    padding: 6px 10px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 106.4%;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    color: white;
+}
+
+.deliveryFlex {
+    display: flex;
+    align-items: center;
+}
+
+.flex {
+    display: flex !important;
+    align-items: center;
+    gap: 1rem;
+
+
+}
+
+.line {
+
+    width: 1px;
+    border: 0.5px solid rgba(248, 191, 0, 0.50);
+    background: rgba(248, 191, 0, 0.50);
+}
+
+.darkSection {
+
+    border-radius: 65px;
+    background: #282828;
+}
+
+.pop {
+    color: #282828;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 106.4%;
+}
+
+.yellow {
+    color: #F5B324 !important;
+}
+
+.white {
+    color: #FFF !important;
+}
+
+.borderYellow {
+    border: 1px solid #F5B324 !important;
+}
+
+body {
+    font-family: Gilroy, 'Inter', sans-serif;
+    background: #EFEFEF;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    z-index: 1111;
+    position: relative;
+    background: #282828;
+}
+
+.header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 111;
+    flex-wrap: wrap;
+    gap: 2rem;
+    color: #FFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 22px;
+    position: relative;
+}
+.centerChild{
+    display: flex;
+    justify-content: center;
+}
+.header nav .logo {
+    height: 48px;
+}
+
+.header nav .logo img {
+    height: 100%;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 33px;
+}
+
+.header nav ul li {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 106.4%;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.header nav ul li:hover {
+    transform: scale(1.2);
+    color: #F5B324;
+}
+
+.header nav ul .active {
+    color: #F8BF00;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 106.4%;
+    /* 17.024px */
+    text-transform: uppercase;
+}
+
+.mainCarImage {
+    position: absolute;
+    right: 0;
+    pointer-events: none;
+}
+
+.header nav .translate {
+    color: #FFF;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 106.4%;
+    /* 17.024px */
+    text-transform: uppercase;
+}
+
+.header nav .beTaksist {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #F8BF00;
+    background: rgba(0, 0, 0, 0);
+    padding: 6px 20px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 106.4%;
+    /* 17.024px */
+}
+
+.main {
+
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 40px;
+
+}
+
+.main .Mainbackround {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 0 50px 50px;
+}
+
+.main .overlay {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(270deg, #1e1e1e87 5.28%, rgba(1, 1, 2, 0.00) 93.96%);
+
+    border-radius: 0 0 50px 50px;
+
+}
+
+.mainTitle {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+
+.mainTitle h1 {
+    color: #282828;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 106.4%;
+    /* 51.072px */
+    text-transform: uppercase;
+}
+.aboutPageTitle{
+    padding: 60px 0;
+    color: #282828;
+font-family: Gilroy;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: 95%; /* 45.6px */
+}
+.mainTitle h2 {
+    color: #F5F5F5;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 106.4%;
+    /* 69.16px */
+    text-transform: uppercase;
+}
+
+.mainTitle h3 {
+    color: black;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 106.4%;
+    /* 34.048px */
+}
+
+.mainTitle .mainButton {
+    border-radius: 15px;
+    border: 2px solid #F8BF00;
+    padding: 16px 35px;
+    color: black;
+    background: #f8be005f;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 106.4%;
+    text-align: center;
+    width: fit-content;
+    /* 25.536px */
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.service {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1380px;
+    margin: 0 auto;
+
+    padding: 6% 40px;
+}
+
+.service .serviceItem {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+
+
+}
+
+.service .serviceItem p {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90%;
+    /* 21.6px */
+}
+
+.swiper-container {
+    width: 100%;
+
+}
+
+.swiper-slide {
+    overflow: hidden;
+}
+
+.aboutAppCard {
+    border-radius: 45px;
+    /* background: #FFF; */
+    padding: 45px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutAppCard .aboutCardLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem !important;
+    justify-content: space-between;
+
+}
+
+.aboutAppCard .aboutCardLeft h1 {
+    color: #F8BF00;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 106.4%;
+    /* 51.072px */
+}
+
+.aboutAppCard .aboutCardLeft .slideNum {
+    border-radius: 16px;
+    border: 2px solid #FCC020;
+    padding: 10px 16px;
+    width: fit-content;
+}
+
+.aboutAppCard {
+    transition: 0.3s;
+}
+
+
+
+.aboutAppCard .aboutCardLeft .slideNum h1 {
+    color: #363636;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 106.4%;
+    /* 29.792px */
+}
+
+
+.slideNumTitle {
+    color: #282828;
+    font-size: 28px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 106.4%;
+    /* 29.792px */
+}
+
+.aboutAppCard .aboutCardLeft .slideNum p {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 106.4%;
+    /* 25.536px */
+}
+
+.aboutAppCard .aboutCardLeft h2 {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 106.4%;
+    /* 17.024px */
+}
+
+.cardFlex {
+    display: flex;
+    gap: 1rem;
+}
+
+.aboutAppCard .aboutCardRight .aboutCardImage {
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.aboutAppCard .aboutCardRight {
+    width: 100%;
+}
+
+.aboutAppCard .aboutCardLeft {
+    width: 100%;
+}
+
+
+.aboutAppCard .aboutCardRight .aboutCardImage img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.downloadApp {
+    padding: 60px 0;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.downloadApp h1 {
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 106.4%;
+    /* 51.072px */
+}
+
+.downloadAppLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.downloadApp p {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 106.4%;
+    /* 25.536px */
+}
+
+.downloadApp .downloadAppRight img {
+    width: 100%;
+}
+
+.orangeBGbutton {
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 15px;
+    background: #F5B324;
+    padding: 16px 35px;
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 106.4%;
+    /* 25.536px */
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.Proof {
+    border-radius: 65px;
+    background: #FFF;
+    padding: 69px;
+}
+
+.Proof .ProofContiner {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.Proof .ProofContiner h1 {
+    color: #282828;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 106.4%;
+    /* 51.072px */
+}
+
+.Proof .ProofContiner .proofList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.Proof .ProofContiner .proofList .proofListItem {
+    border-radius: 40px;
+    border: 2px solid #F8BF00;
+    padding: 36px;
+    height: 500px;
+    width: 30vw;
+    flex: 1 1 190px;
+}
+
+.proofListItem {
+    transition: 0.3s;
+}
+
+.proofListItem:hover {
+    transform: scale(1.02);
+}
+
+.Proof .ProofContiner .proofList .proofListItem .proofItemTop {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Proof .ProofContiner .proofList .proofListItem .proofItemTop h1 {
+    color: #282828;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 95%;
+    /* 34.2px */
+}
+
+.Proof .ProofContiner .proofList .proofListItem .proofItemTop img {
+    width: 85px;
+    object-fit: contain;
+}
+
+.proofItemMain p {
+    color: #282828;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 106.4%;
+    /* 25.536px */
+}
+
+.MainContainer {
+    padding: 40px;
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+.preFooter {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 85px 1rem;
+}
+
+.preFooter .preFooterLeft p {
+    color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 106.4%;
+    /* 31.92px */
+}
+
+.preFooter .preFooterLeft p u {
+    color: #F8BF00;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 106.4%;
+}
+
+.preFooter .preFooterRigth .preFooterImage {
+    width: 325px;
+    height: 325px;
+    overflow: hidden;
+}
+
+.preFooter .preFooterRigth .preFooterImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    border-radius: 50px 50px 0px 0px;
+    background: #282828;
+    padding: 40px;
+}
+
+.footer p {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 106.4%;
+    /* 19.152px */
+}
+
+.footer .footerContainer {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.footer .footerContainer nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .footerContainer nav ul {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    list-style: none;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 106.4%;
+    /* 17.024px */
+    text-transform: uppercase;
+}
+
+.socialMedia {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.socialMedia .iconItem {
+    border-radius: 10px;
+    border: 1px solid #F8BF00;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 44px;
+}
+
+.footer .footerContainer nav .socialMedia .iconItem p {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 106.4%;
+    /* 17.024px */
+}
+
+.footer .footerContainer nav .socialMedia .iconItem img {
+    width: 44px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.footer .footerContainer .lust {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.partGroupTop h1 {
+    transition: 0.2s;
+}
+
+.partGroupTop h1:hover {
+    color: #F5B324;
+}
+
+.miniCard {
+    align-items: center;
+    height: 100%;
+    display: flex;
+    border-radius: 50px;
+    background: #FFF;
+    padding: 2rem 27px;
+    border: 1px solid #ccc;
+}
+
+.miniCard .aboutCardRight .aboutCardImage {
+    height: 100% !important;
+    display: flex;
+    gap: 1rem;
+    border-radius: 34px !important;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.preFooter {
+    position: relative !important;
+}
+
+.taxiPreFooterImg {
+    position: absolute;
+    right: 0;
+    top: 26%;
+    z-index: -1;
+}
+
+.taxi h1 {
+
+
+    font-size: 48px !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    line-height: 106.4%;
+    /* 51.072px */
+}
+
+.cardgoProof {
+    max-width: 1380px;
+    margin: 2rem auto;
+    padding: 40px;
+}
+
+.cardgoProof h1 {
+    color: #FFF;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 106.4%;
+}
+
+.cardgoProofContiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 1rem;
+    height: 100%;
+
+}
+
+.cardgoProofContiner:nth-child(2) {
+    padding-bottom: 1rem;
+}
+
+.cargoCard {
+    transition: 0.3s;
+    flex: 1 1 190px;
+    width: 350px;
+    display: flex;
+    height: 440px;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 45px;
+    padding: 2rem;
+    border: 2px solid #BABABA;
+}
+
+.cargoCard:hover {
+    transform: scale(1.02);
+}
+
+.cargoCard h1 {
+    color: #F8BF00;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 106.4%;
+    /* 29.792px */
+    /* 29.792px */
+}
+
+.cargoCard h2 {
+    color: #282828;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 95%;
+    /* 22.8px */
+    /* 22.8px */
+}
+
+.cargoCard div {
+    height: 190px;
+    width: 190px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.cargoCard div img {
+
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.mobile-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #282828;
+    text-align: center;
+    opacity: 0;
+    z-index: 20;
+    box-sizing: border-box;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.mobile-menu.open {
+    display: block;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.burger-wrap {
+    display: none;
+    position: absolute;
+    z-index: 40;
+    transition: 300ms 700ms transform ease-in;
+}
+
+.burger-wrap.reappearBurger {
+    opacity: 0;
+    animation: 0.5s 2s fadeAppear ease-out forwards;
+}
+
+.mobile-menu .nav ul {
+    margin: 0 auto;
+}
+
+.aboutTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.aboutTitle h1 {
+    color: #F8BF00;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 85%;
+    /* 27.2px */
+}
+
+.aboutTitle h2 {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 95%;
+    /* 22.8px */
+}
+
+.aboutTitle p {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 95%;
+    /* 22.8px */
+}
+
+
+
+
+.instructionSection {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.instructionSection h1 {
+    color: #282828;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 106.4%;
+    /* 51.072px */
+}
+
+.instructionCard {
+
+    border-radius: 25px;
+    border: 2px solid #D4D4D4;
+    background: #FFF;
+    padding: 33px;
+    width: 23%;
+    display: flex;
+    height: 678px;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.instructionCard .instrukionImage {
+    width: 100%;
+    height: 100%;
+}
+
+.instructionCard .instrukionImage img {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+
+.Dark {
+    border-radius: 25px !important;
+    border: 2px solid #D9D9D9 !important;
+    background: #282828 !important;
+}
+
+/* .
+.Dark h1,p {
+    color: white !important;
+} */
+
+.instructionContainer {
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.instructionCard h1 {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    color: #282828;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 106.4%;
+    /* 21.28px */
+}
+
+.instructionCard p {
+    height: 96px;
+    color: #282828;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 106.4%;
+    /* 21.28px */
+}
+
+.contactContainer {
+    padding: 20vh;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contactTitle h1 {
+    color: #282828;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 85%;
+    /* 27.2px */
+    text-transform: uppercase;
+}
+
+.contactTitle {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+}
+
+.contactTitle div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contactTitle div p {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 24px */
+}
+
+@keyframes fadeAppear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.burger {
+    width: 30px;
+    height: 27px;
+    cursor: pointer;
+    z-index: 30;
+    transition: transform 1s ease-in;
+}
+
+.burger span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    left: 0;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+}
+
+.burger span:nth-child(1) {
+    top: 0px;
+    width: 50%;
+}
+
+.burger span:nth-child(2) {
+    top: 12px;
+    width: 75%;
+}
+
+.burger span:nth-child(3) {
+    top: 24px;
+    width: 100%;
+}
+
+.burger.active span:nth-child(1) {
+    width: 100%;
+    top: 12px;
+    transform: rotate(135deg);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    top: 12px;
+    transform: rotate(-135deg);
+}
+
+
+.mobileMenuDisabled {
+    display: none;
+}
+
+.burgerMenu {
+    display: none;
+}
+
+.mobileMenuActive {
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    position: fixed;
+    width: 50%;
+    height: 100%;
+
+    background-color: #000000ea;
+    color: white;
+    padding: 10%;
+}
+
+.mobileClose {
+    border: 1px solid #F5B324;
+    width: fit-content;
+    border-radius: 50%;
+    padding: 0 1rem;
+    font-size: 40px;
+}
+
+.mobileMenuActive a {
+    color: white;
+
+}
+
+.mobileMenuActive ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.Instruktion {
+    padding: 40px;
+    max-width: 1380px;
+    margin: 0 auto;
+
+}
+
+.Instruktion h1 {
+    color: white;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 106.4%;
+    /* 51.072px */
+}
+
+.stepLine {
+
+
+    min-height: 60px;
+    width: 0px;
+    margin: 6px 23px;
+}
+
+.Instruktion p {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 106.4%;
+    /* 25.536px */
+}
+
+.stepItem {
+    transition: 0.3s;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.stepBar {
+    position: relative;
+}
+
+.stepMainLine {
+    position: absolute;
+    height: 90%;
+    background: white;
+    z-index: 0;
+    border: 2.5px solid white;
+    top: 8px;
+    left: 22px;
+
+}
+
+.stepNumber {
+    z-index: 1;
+    border-radius: 15px !important;
+    background: #F8BF00;
+    color: white;
+    width: 50px !important;
+    height: 50px !important;
+    padding: 1rem 1.3rem !important;
+}
+
+.stepItem div {
+    z-index: 1;
+    border-radius: 15px;
+    background: #F8BF00;
+    color: white;
+    width: 50px;
+    height: 50px;
+    padding: 1rem 1.3rem;
+}
+
+
+.partners {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+}
+
+.partnersLeft h1 {
+    color: #282828;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 85%;
+    /* 30.6px */
+    text-transform: uppercase;
+}
+
+.partnersLeft h2 {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 24px */
+}
+
+.partnersRigth {
+    width: 320px;
+    height: 320px;
+}
+
+.partnersRigth img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.partGroup {
+    width: 100%;
+    border-radius: 35px;
+    background: #FFF;
+}
+
+.partGroupContainer {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.partGroupTop {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+
+.partGroupBop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.partBotImage {
+    height: 200px;
+
+}
+
+.partBotImage img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.partTitle p {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 24px */
+}
+
+.partTitle {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    /* 24px */
+}
+
+.partCard {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    align-items: center;
+    border-radius: 35px;
+    background: #282828;
+    padding: 40px;
+    width: 220px;
+    height: 300px;
+    text-align: center;
+    /* 19px */
+}
+
+.partCardSwiper {
+    max-width: 1380px;
+    margin: 0 auto;
+    display: flex;
+
+    align-items: center;
+}
+
+.partSwiperLine {
+    position: relative;
+    height: 5px;
+    background: #F8BF00;
+    width: 70px;
+}
+
+.partSwiperLine svg {
+    position: absolute;
+    top: -12px;
+    left: 15%;
+    ;
+}
+
+.partCard h1 {
+    color: #FFF;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 95%;
+}
+
+.partCardImage {
+    width: 150px;
+}
+
+.partCardImage img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.formSection {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.formTitle h1 {
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    /* 32px */
+}
+
+.formTitle h2 {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 95%;
+    /* 22.8px */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 25px;
+    background: #FFF;
+    padding: 40px;
+}
+
+.form h1 {
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 95%;
+    /* 30.4px */
+}
+
+.form input {
+    border-radius: 15px;
+    border: 1px solid #D4D4D4;
+    padding: 19px;
+}
+
+.formButton {
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    background: #F8BF00;
+    padding: 18px;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 95%;
+    /* 22.8px */
+}
+
+.aboutSection .aboutAppCard {
+    height: fit-content !important;
+}
+
+.beTax .mainCarImage img {
+    width: 100%;
+    position: relative;
+}
+
+@media(max-width:1245px) {
+    .beTax {
+        margin: 3rem 0;
+    }
+
+    .main .Mainbackround {
+        height: 120vh;
+    }
+
+    .main .overlay {
+        height: 120vh;
+    }
+
+    .main .overlay {
+        display: block;
+    }
+
+    .downloadApp {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .downloadApp button {
+        margin: 0 auto;
+    }
+
+    .mainCarImage {
+        z-index: -1;
+        position: absolute;
+        right: 0;
+    }
+
+    .mainTitle,
+    h3 {
+        color: #D9D9D9;
+    }
+
+    .mainTitle h3 {
+        color: black;
+    }
+
+
+
+}
+
+@media(max-width:1128px) {
+    .cargoCard {
+        height: 469px;
+    }
+}
+
+@media(max-width:1024px) {
+    .beTax {
+        margin: 0;
+    }
+
+    .instructionContainer {
+        justify-content: space-around;
+    }
+
+    .instructionCard {
+        width: 34%;
+    }
+}
+
+@media(max-width:830px) {
+    .beTax {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .beTax .mainCarImage img {
+        position: relative;
+    }
+
+    .Proof .ProofContiner .proofList .proofListItem {
+        height: fit-content;
+    }
+
+    .aboutAppCard {
+        transition: 0.3s;
+        height: 710px;
+        flex-direction: column;
+    }
+
+    .aboutAppCard .aboutCardLeft h2 {
+        margin: 1rem;
+    }
+
+    .partGroupBop {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    .cargoCard {
+        height: fit-content;
+    }
+
+    .taxiPreFooterImg {
+        top: 0;
+    }
+
+    .miniCard {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .main .Mainbackround {
+        height: 100vh;
+        border-radius: 0px 0px 45px 45px;
+
+    }
+
+    .main .overlay {
+        height: 100vh;
+    }
+
+    .preFooter {
+        flex-wrap: wrap-reverse;
+        text-align: center;
+    }
+
+    .aboutAppCard {
+        transition: 0.3s;
+        height: 50%;
+        flex-direction: column;
+    }
+
+    .proofList {
+        flex-direction: column;
+    }
+
+    .Proof .ProofContiner .proofList .proofListItem {
+        width: 100%;
+    }
+
+    .aboutCardLeft {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: space-between;
+    }
+
+    .slideNum {
+        margin: 0 auto;
+    }
+
+    .main {
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+    }
+
+    .mainCarImage {
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+
+
+    }
+
+    .mainCarImage img {
+        position: absolute;
+        width: 100%;
+        bottom: 30%;
+    }
+
+    .preFooterRigth {
+
+        margin: 0 auto;
+    }
+
+    .service {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .mainTitle {
+        height: 90%;
+
+    }
+}
+
+@media(max-width:770px) {
+    .mainTitle h1 {
+        font-size: 34px;
+    }
+
+    .mainTitle h2 {
+        font-size: 54px;
+    }
+
+    .form h1 {
+        font-size: 20px;
+    }
+
+    .formTitle h1 {
+        font-size: 20px;
+    }
+
+    .formSection {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .instructionCard {
+        width: 50%;
+        height: fit-content;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .main .Mainbackround {
+        height: 95vh;
+    }
+
+    .main .overlay {
+        height: 95vh;
+    }
+
+    .header nav .desc {
+        display: none;
+    }
+
+    .burger-wrap {
+        display: block;
+    }
+
+    .burgerMenu {
+        display: block;
+    }
+
+    .footer .footerContainer nav ul {
+        flex-wrap: wrap;
+    }
+
+    .Proof .ProofContiner .proofList .proofListItem .proofItemTop {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .Proof .ProofContiner .proofList .proofListItem {
+        height: fit-content;
+    }
+}
+
+@media(max-width:571px) {
+
+
+    .partners{
+        flex-direction: column;
+    }
+    .aboutTitle p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .aboutTitle h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .aboutTitle h2 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .aboutTitle p {
+        font-size: 15px;
+    }
+
+    .aboutAppCard {
+        border-radius: 28px;
+
+        padding: 28px 33px;
+        transition: 0.3s;
+        height: 576px;
+        flex-direction: column;
+    }
+
+    .Proof .ProofContiner h1 {
+        font-size: 27px;
+        text-align: center;
+    }
+
+    .proofItemMain p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .stepLine {
+
+        min-height: 60px;
+        width: 0px;
+        margin: 9px 14px;
+    }
+
+    .aboutAppCard .aboutCardLeft .slideNum h1 {
+        font-size: 21px;
+    }
+
+    .slideNumTitle {
+        font-size: 22px;
+    }
+
+    .aboutAppCard .aboutCardLeft h1 {
+        font-size: 25px;
+    }
+
+    .partBotImage {
+        width: 100%;
+    }
+
+    .partBotImage img {
+        width: 100%;
+    }
+
+    .partGroupTop {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+
+    .instructionCard {
+        width: 100%;
+
+    }
+
+    .taxi h1 {
+        font-size: 35px !important;
+    }
+
+    .deliveryFlex {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .mainTitle h1 {
+        font-size: 38px;
+    }
+
+    .Instruktion p {
+        font-size: 15px;
+    }
+
+    .Instruktion h1 {
+        font-size: 26px;
+        position: absolute;
+        margin-top: 20px;
+    }
+
+    .preFooter .preFooterLeft p,.preFooter .preFooterLeft p u {
+        font-size: 20px;
+    }
+
+    .service .serviceItem {
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .main .mainTitle h1 {
+        font-size: 38px;
+    }
+
+    .main .mainTitle h2 {
+        font-size: 55px;
+    }
+
+    .main .mainTitle h2 {
+        font-size: 22px;
+    }
+
+    .Proof {
+        padding: 0;
+    }
+
+    .main .Mainbackround {
+        height: 100vh;
+    }
+
+    .main .overlay {
+        height: 100vh;
+    }
+
+    .Proof .ProofContiner .proofList .proofListItem .proofItemTop h1 {
+        font-size: 24px;
+    }
+
+    .main .mainTitle h1 {
+        font-size: 28px;
+    }
+
+    .main .mainTitle h3 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .preFooter .preFooterRigth .preFooterImage {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .cardFlex {
+        flex-direction: column;
+    }
+
+    .contactContainer {
+        padding: 20vh 2vw;
+    }
+
+    .partSwiperLine {
+        display: none;
+    }
+
+    .partCard {
+        width: 100%;
+    }
+
+ 
+
+    .produckSvg {
+        display: none;
+    }
+
+    .instructionSection h1 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:360px) {
+    .header nav .beTaksist{
+        
+   padding: 6px 10px;
+    }
+    .instructionSection h1 {
+        font-size: 20px;
+    }
+
+    .aboutTitle h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .aboutTitle h2 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .contactTitle h1 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .aboutTitle p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .mainCarImage img {
+        bottom: 40%;
+    }
+
+    .cargoCard div {
+        width: 150px;
+        height: 150px;
+    }
+
+    .taxi h1 {
+        font-size: 23px !important;
+    }
+
+    .orangeBGbutton {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .instructionSection h1 {
+        color: #282828;
+        font-size: 20px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 106.4%;
+    }
+
+    .stepItem div {
+        border-radius: 7px;
+        background: #F8BF00;
+        color: white;
+        width: 33px;
+        height: 33px;
+        padding: 10px;
+    }
+
+    .instructionCard p {
+        font-size: 13px;
+    }
+
+    .instructionSection h1 {
+        font-size: 12px;
+    }
+}
+
+@media(max-width:300px) {
+    .cargoCard div {
+        width: 80px;
+        height: 80px;
+    }
+}

@@ -1,0 +1,184 @@
+
+
+    {%extends 'homepage.html'%}
+    {%load static%}
+    {%block content%}
+    
+    {% include 'include/header.html' %}
+
+  <!-- header end -->
+
+  <!-- header end -->
+  <!-- main start -->
+  <main id="main" class="main">
+    <img id="myElement" class="Mainbackround" src="{{taxi.banner_image.url}}" alt="" />
+    <div class="overlay"></div>
+    <div class="mainTitle">
+      <h1 class="white">{{taxi.title}}</h1>
+      <h2 class="yellow">{{taxi.title2}}</h2>
+      <h3 class="white">
+        {{taxi.descriptions}}
+      </h3>
+      <div class="mainButton borderYellow"><a href="https://play.google.com/store/apps/details?id=com.alaget.taxi2&pcampaignid=web_share">{{settings.install}}</a></div>
+    </div>
+    <div class="mainCarImage">
+
+    </div>
+  </main>
+  <!-- main end -->
+  <!-- service start -->
+  <section class="service">
+    <div class="serviceItem">
+      <img src="{% static 'assets/icons/Group (1).svg' %}" alt="" />
+      <p>{{taxi.advantage1}}</p>
+    </div>
+    <div class="serviceItem">
+      <img src="{% static 'assets/icons/parking_5375572 1.svg' %}" alt="" />
+      <p>{{taxi.advantage2}}</p>
+    </div>
+    <div class="serviceItem">
+      <img src="{% static 'assets/icons/Group 49.svg' %}" alt="" />
+      <p>{{taxi.advantage3}} </p>
+    </div>
+  </section>
+  <!-- service end -->
+  <br><br>
+  <!-- swiper start -->
+  <section>
+    <div style="
+    background: white;
+    border-radius: 50px;
+  " class="swiper-container">
+      <!-- Additional required wrapper -->
+
+
+      <div style="flex-direction: column;gap: 2rem;align-items: start; height: fit-content;" class="aboutAppCard">
+        <h1 class="pop">{{typestaxi.slide_title}}</h1>
+        <div  class="flex">
+          <div class="aboutCardRight">
+            <div style="gap: 1rem;" class="miniCard">
+              <div class="aboutCardRight">
+                <h1>{{typestaxi.title}}</h1>
+                <br>
+                <p>{{typestaxi.descriptions}}</p>
+              </div>
+              <div class="aboutCardRight">
+                <div class="aboutCardImage">
+                  <img
+                    src="{{typestaxi.image.url}}"
+                    alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="aboutCardRight">
+            <div style="gap: 1rem;" class="miniCard">
+              <div class="aboutCardRight">
+                <h1>{{typestaxi.title2}}</h1>
+                <br>
+                <p>{{typestaxi.descriptions2}}</p>
+              </div>
+              <div class="aboutCardRight">
+                <div class="aboutCardImage">
+                  <img
+                    src="{{typestaxi.image2.url}}"
+                    alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.alaget.taxi2&pcampaignid=web_share">
+            <div class="orangeBGbutton"><a href="https://play.google.com/store/apps/details?id=com.alaget.taxi2&pcampaignid=web_share">{{settings.install}}</a></div>
+        </a>
+      
+      </div>
+
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+  </section>
+  <!-- swiper end -->
+  <section class="instructionSection">
+    <h1>{{taxi.title_order}}</h1>
+    <br><br><br>
+    <div class="instructionContainer">
+      {% for ordercity in ordercity %}
+      <div class="instructionCard">
+        <div class="instrukionImage"><img src="{{ordercity.image.url}}" alt=""></div>
+        <h1>
+          <div class="stepItem">
+            <div>{{ordercity.numbers}}</div>
+          </div>{{ordercity.title}}
+        </h1>
+        <p>{{ordercity.descriptions}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+ 
+  <section class="instructionSection">
+    <h1>{{taxi.title_order2}}</h1>
+    <br><br><br>
+    <div class="instructionContainer">
+      {% for orderintercity in orderintercity %}
+      <div class="instructionCard Dark">
+        <div class="instrukionImage"><img src="{{orderintercity.image.url}}" alt=""></div>
+        <h1 class="white">
+          <div class="stepItem white">
+            <div>{{orderintercity.numbers}}</div>
+          </div>{{orderintercity.title}}
+        </h1>
+        <p class='white'>{{orderintercity.descriptions}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Proof start -->
+  <section class="Proof">
+    <div class="ProofContiner">
+      <h1>{{whys.why}}</h1>
+      <br />
+      <br />
+      <div class="proofList">
+        {% for why in why %}
+        <div class="proofListItem">
+          <div class="proofItemTop">
+            <h1>{{why.title}}</h1>
+            <img src="{{why.image.url}}" alt="" />
+          </div>
+          <br />
+          <div class="proofItemMain">
+            <p>{{why.descriptions}}
+            </p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <!-- Proof end -->
+  <!-- preFooter start -->
+  <section class="preFooter">
+    <div class="taxi preFooterLeft">
+      <h1>{{earn.title}}</h1>
+
+      <br />
+      <p>{{earn.descriptions}}</p>
+      <br />
+      <button class="orangeBGbutton"><a href="https://play.google.com/store/apps/details?id=com.alaget.taxi2&pcampaignid=web_share">{{settings.install}}</a></button>
+    </div>
+    <div style="width: 100%;"></div>
+    <div class="preFooterRigth">
+      <div class="taxiPreFooterImg">
+        <img src="{{earn.image.url}}" alt="" />
+      </div>
+    </div>
+  </section>
+  <!-- preFooter end -->
+ 
+
+{% include 'include/footer.html' %}
+
+{%endblock%}

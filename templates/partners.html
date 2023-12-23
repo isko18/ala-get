@@ -1,0 +1,310 @@
+{%load static%}
+{%block content%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'assets/style/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/style/miniSwiper.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/img/favicon.png' %}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/img/favicon.png' %}" />
+
+
+    <title>{{title}}</title>
+</head>
+
+<body>
+    <!-- header start -->
+
+
+    {% include 'include/header.html' %}
+    <!-- header end -->
+
+    <main id="main" class="main">
+        <img id="myElement" class="Mainbackround" src="{{partners.banner_image.url}}" alt="" />
+        <div class="overlay"></div>
+        <div class="mainTitle">
+
+            <h2 class="yellow">{{partners.title}}</h2>
+            <h2 class="white">{{partners.descriptions}}</h2>
+
+            <a href="{% url 'contact' %}"><div  class="mainButton borderYellow">{{partners.title2}}</div></a>
+        </div>
+        <div class="mainCarImage">
+
+        </div>
+    </main>
+
+    <section class="partners">
+        <div class="partnersLeft">
+            <h1>{{partners.become_title}}</h1>
+            <br>
+            <h2>{{partners.become_descriptions}}
+            </h2>
+        </div>
+        <div class="partnersRigth">
+            <img src="{{partners.become_image.url}}" alt="">
+        </div>
+    </section>
+    <section class="partGroup">
+        <div class="partGroupContainer">
+            <div class="partGroupTop">
+                <h1 style="text-decoration: underline #F8BF00;     font-size: 28px;">{{partners.local_title}}</h1>
+                <h1></h1>
+            </div>
+            <br>
+            <div class="partGroupBop">
+                <div class="partBotImage">
+                    <img src="{% static 'assets/img/Стойка в кривых 4 (1).svg' %}" alt="">
+                </div>
+                <div class="partTitle">
+                    <p>{{partners.local_descriptions}}
+
+                    </p>
+                    <br>
+                    <h5>
+                        {{partners.local_title2}}</h5>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="partners">
+        <div class="swiper-container">
+
+            <!-- additional required wrapper -->
+            <div class="swiper-wrapper">
+
+                <!-- slides -->
+                {% for partnersslider2 in partnersslider2 %}
+                <div class="swiper-slide">
+                    <div class="partSwiperLine">
+                        <div></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <circle cx="15" cy="15" r="15" fill="#282828" />
+                            <path d="M13 9C13 9 19.7613 15.5 19.9945 15.5C20.2276 15.5 13 22 13 22" stroke="#F8BF00"
+                                stroke-width="3" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="partCard">
+                        <div class="partCardImage">
+                            <img src="{{partnersslider2.image.url}}" alt="">
+                        </div>
+                        <h1>
+                            {{partnersslider2.title}}
+                        </h1>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+
+            <!-- pagination -->
+            <div style="display: none;" class="swiper-pagination"></div>
+
+            <!-- navigation buttons -->
+            <div style="display: none;" class="swiper-button-prev"></div>
+            <div style="display: none;" class="swiper-button-next"></div>
+
+        </div>
+
+
+
+    </section>
+    <section class="partGroup">
+        <div class="partGroupContainer">
+            <div class="partGroupTop">
+                <h1 style="text-decoration: underline #F8BF00;     font-size: 28px;">{{partners.global_title}}</h1>
+
+            </div>
+            <br>
+            <div class="partGroupBop">
+                <div class="partBotImage">
+                    <img src="{% static 'assets/img/Group 230.png' %}" alt="">
+                </div>
+                <div class="partTitle">
+                    <p>{{partners.global_descriptions}}
+
+                    </p>
+                    <br>
+                    <h5>
+                        {{partners.global_title2}}</h5>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="partners">
+        <div class="swiper-container">
+
+            <!-- additional required wrapper -->
+            <div class="swiper-wrapper">
+
+                <!-- slides -->
+                {% for partnersslider in partnersslider %}
+                <div style="width: 240px; overflow: unset;" class="swiper-slide">
+                    <div style="margin:0;" class="product">
+
+                        <div class="partCard">
+                            <div class="partCardImage">
+                                <img src="{{partnersslider.image.url}}" alt="">
+                            </div>
+                            <h1>
+                                {{partnersslider.title}}
+                            </h1>
+                        </div>
+                    </div>
+                    <svg class="produckSvg" style="position: absolute;right: -5px;z-index: 111111;" xmlns="http://www.w3.org/2000/svg"
+                    width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <circle cx="15" cy="15" r="15" fill="#F1BA01" />
+                    <path d="M13 9C13 9 19.7613 15.5 19.9945 15.5C20.2276 15.5 13 22 13 22" stroke="white"
+                        stroke-width="3" stroke-linecap="round" />
+                </svg>
+                   
+                </div>
+                {% endfor %}
+
+            </div>
+
+            <!-- pagination -->
+            <div style="display: none;" class="swiper-pagination"></div>
+
+            <!-- navigation buttons -->
+            <div style="display: none;" class="swiper-button-prev"></div>
+            <div style="display: none;" class="swiper-button-next"></div>
+
+        </div>
+
+
+
+    </section>
+
+
+
+    <section class="formSection">
+        <div class="formTitle">
+            <h1>{{partners.getting_title}}</h1>
+            <h2 class="flex">
+                <img src="{% static 'assets/icons/Vector — копия.svg' %}" alt="">
+                {{partners.getting_descriptions}}
+            </h2>
+            <h2 class="flex">
+                <img src="{% static 'assets/icons/Vector — копия.svg' %}" alt="">
+                {{partners.getting_descriptions2}} 
+            </h2>
+            <h2 class="flex">
+                <img src="{% static 'assets/icons/Vector — копия.svg' %}" alt="">
+                {{partners.getting_descriptions3}}
+            </h2>
+
+        </div>
+        <form class="form" method="post" action="{% url 'contact' %}">
+            {% csrf_token %}
+            <h1>{{contact.title_form}}</h1>
+
+            <input id="id_firstname" name="firstname" placeholder="{{contact.firstname}}" type="text">
+
+            <input id="id_name_company" name="name_company" placeholder="{{contact.name_company}}" type="text">
+
+
+            <input id="id_number_email" name="number_email" placeholder="{{contact.number_email}}" type="text">
+
+            <button type="submit" class="formButton">Оставить заявку</button>
+        </form>
+    </section>
+
+
+
+
+    <!-- 
+    <section class="partCardSwiper">
+        <div class="partCard">
+            <div class="partCardImage">
+                <img src="{% static 'assets/img/35 1.png' %}" alt="">
+            </div>
+            <h1>
+                Переговоры
+            </h1>
+        </div>
+        <div class="partSwiperLine">
+            <div></div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <circle cx="15" cy="15" r="15" fill="#282828" />
+                <path d="M13 9C13 9 19.7613 15.5 19.9945 15.5C20.2276 15.5 13 22 13 22" stroke="#F8BF00"
+                    stroke-width="3" stroke-linecap="round" />
+            </svg>
+        </div>
+
+        <div class="partCard">
+            <div class="partCardImage">
+                <img src="{% static 'assets/img/35 1.png' %}" alt="">
+            </div>
+            <h1>
+                Переговоры
+            </h1>
+        </div>
+        <div class="partSwiperLine">
+            <div></div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <circle cx="15" cy="15" r="15" fill="#282828" />
+                <path d="M13 9C13 9 19.7613 15.5 19.9945 15.5C20.2276 15.5 13 22 13 22" stroke="#F8BF00"
+                    stroke-width="3" stroke-linecap="round" />
+            </svg>
+        </div>
+        <div class="partCard">
+            <div class="partCardImage">
+                <img src="{% static 'assets/img/35 1.png' %}" alt="">
+            </div>
+            <h1>
+                Переговоры
+            </h1>
+        </div>
+        <div class="partSwiperLine">
+            <div></div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <circle cx="15" cy="15" r="15" fill="#282828" />
+                <path d="M13 9C13 9 19.7613 15.5 19.9945 15.5C20.2276 15.5 13 22 13 22" stroke="#F8BF00"
+                    stroke-width="3" stroke-linecap="round" />
+            </svg>
+        </div>
+        <div class="partCard">
+            <div class="partCardImage">
+                <img src="{% static 'assets/img/35 1.png' %}" alt="">
+            </div>
+            <h1>
+                Переговоры
+            </h1>
+        </div>
+       
+        <div class="partCard">
+            <div class="partCardImage">
+                <img src="{% static 'assets/img/35 1.png' %}" alt="">
+            </div>
+            <h1>
+                Переговоры
+            </h1>
+        </div>
+
+    </section> -->
+    {% include 'include/footer.html' %}
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
+    <script src="{% static 'assets/js/miniSwiper.js' %}"></script>
+    <script src="{% static 'assets/js/script.js' %}"></script>
+    <script src="{% static 'assets/js/language_switch.js' %}"></script>
+
+</body>
+
+</html>
+{%endblock%}

@@ -1,0 +1,99 @@
+{%extends 'homepage.html'%}
+{%load static%}
+{%block content%}
+
+{% include 'include/header.html' %}
+<!-- header end -->
+
+<!-- header end -->
+<!-- main start -->
+<main id="main" class="main">
+  <img id="myElement" style="padding-top: 15vh;" class="Mainbackround" src="{{betaxist.banner_image.url}}" alt="" />
+  <div class="overlay"></div>
+  <div class=" taxi mainTitle">
+    <h2 class="yellow">{{betaxist.title}}</h2>
+
+    <h3>
+      {{betaxist.title2}}
+    </h3>
+    <div class="mainButton borderYellow"><a href="https://play.google.com/store/apps/details?id=com.alaget.taxi2&pcampaignid=web_share">{{settings.install}}</a></div>
+  </div>
+  <div style="width: 100%;"></div>
+  <div class="mainCarImage">
+
+  </div>
+</main>
+<!-- main end -->
+<div class="MainContainer cardFlex beTax ">
+  <div class="mainTitle">
+    <h1 style="color: black !important;">{{betaxist.join_title}}</h1>
+
+    <h3 style="color: black !important;">
+      {{betaxist.join_descriptions}}
+    </h3>
+    <div class="orangeBGbutton"><a href="https://play.google.com/store/apps/details?id=com.alaget.taxi2&pcampaignid=web_share">{{settings.install}}</a></div>
+  </div>
+  <div style="position: relative !important;" class="mainCarImage">
+    <img src="{{betaxist.join_image.url}}" alt="" />
+  </div>
+
+</div>
+
+
+<section class="darkSection">
+  <div class="Instruktion">
+    <h1>{{betaxist.earnmoney_title}}</h1>
+    <p>{{betaxist.earnmoney_descriptions}}</p>
+    <br>
+    <br>
+
+    <div class="stepBar">
+      {% for earnnoney in earnnoney %}
+    </div>
+    <div class="stepItem">
+      <div>{{ earnnoney.numbers }}</div>
+      <article>
+        <p>{{ earnnoney.title }}</p>
+        <h5>{{ earnnoney.descriptions|default:"" }}</h5>
+      </article>
+    </div>
+
+
+    {% if forloop.last %}
+    {% else %}
+    <div class="stepLine">
+
+      {% endif %}
+      {% endfor %}
+
+    </div>
+
+
+
+
+
+  </div>
+  </div>
+</section>
+
+<!-- preFooter start -->
+<section class="preFooter">
+  <div class="preFooterLeft">
+    <p>
+      {{environment.title}} <u>{{environment.descriptions}}</u> {{environment.descriptions2}}
+    </p>
+    <br />
+    <p>{{environment.descriptions3}}</p>
+    <br />
+    <button class="orangeBGbutton"> <a href="https://play.google.com/store/apps/details?id=com.alaget.taxi2&pcampaignid=web_share">{{settings.install}}</a></button>
+  </div>
+  <div class="preFooterRigth">
+    <div class="preFooterImage">
+      <img src="{{environment.image.url}}" alt="" />
+    </div>
+  </div>
+</section>
+<!-- preFooter end -->
+{% include 'include/footer.html' %}
+
+{%endblock%}

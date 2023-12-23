@@ -1,0 +1,162 @@
+.swiper-container {
+    margin-top: 2em;
+    /* minor cosmetic */
+}
+
+.swiper-wrapper {
+    /* now pagination is below slides */
+    margin-bottom: 3em;
+
+    /* just enough width so slides handing off screen are partially visible */
+    width: 73.8%;
+}
+
+@media (min-width: 37.5em) {
+    .swiper-wrapper {
+        /* now arrows appear */
+        /* make room for arrows */
+        width: 260px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (min-width: 43.75em) {
+    .swiper-wrapper {
+        /* make room for arrows */
+        width: 260px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+/* doubleing up specificity to win over on transform */
+.swiper-slide.swiper-slide {
+    /* a single column layout */
+    width: 260px;
+    display: flex;
+    align-items: center;
+}
+
+
+@media (min-width: 37.5em) {
+    .swiper-slide.swiper-slide {
+        /* going for a 2 column layout here */
+        width: 260px;
+        display: flex;
+        align-items: center;
+
+        /* centeredSlides set to true */
+        /* reposition so first slide appears on left */
+
+    }
+}
+
+@media (min-width: 43.75em) {
+    .swiper-slide.swiper-slide {
+        /* upping it to a 3 column layout */
+        width: 260px;
+        display: flex;
+        align-items: center;
+
+        /* centeredSlides set to true */
+        /* reposition so first slide appears on left */
+
+    }
+}
+
+@media (min-width: 53em) {
+    .swiper-slide.swiper-slide {
+        /* and finally the 4 column layout */
+        width: 260px;
+        display: flex;
+        align-items: center;
+        display: flex;
+        align-items: center;
+
+        /* centeredSlides set to true */
+        /* reposition so first slide appears on left */
+
+    }
+}
+
+.swiper-pagination {
+    /* show on small viewports */
+    display: block;
+}
+
+@media (min-width: 37.5em) {
+    .swiper-pagination {
+        /* hide on larger viewports per stakeholder recommendation */
+        display: none;
+    }
+}
+
+/* now move prev button more to the left */
+
+
+@media (min-width: 37.5em) {
+    .swiper-button-prev {
+        /* show on larger viewports */
+        display: block;
+    }
+}
+
+
+@media (min-width: 37.5em) {
+    .swiper-button-next {
+        /* show on larger viewports */
+        display: block;
+    }
+}
+
+/* ==========================================================================
+   content in swiper
+ ========================================================================== */
+
+.product {
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.photograph {
+    /* if parent is flex it will stretch this image */
+    // align-self: center;
+    display: block;
+
+    height: auto;
+    width: 100%;
+}
+
+.product__name.product__name {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: calc(.5em + 5vw);
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (min-width: 37.5em) {
+    .product__name.product__name {
+        font-size: .92em;
+    }
+}
+
+.product__description {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: calc(.3em + 5vw);
+    font-weight: 300;
+    line-height: 1.1;
+    text-align: center;
+}
+
+@media (min-width: 37.5em) {
+    .product__description {
+        font-size: .92em;
+    }
+}

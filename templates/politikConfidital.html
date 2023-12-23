@@ -1,0 +1,808 @@
+{%load static%}
+{%block content%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'assets/style/style.css' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/img/favicon.png' %}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/img/favicon.png' %}" />
+    
+    <title>{{title}}</title>
+</head>
+<style>
+    p {
+        margin: 0pt
+    }
+
+    .NormalWeb {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+        font-family: 'Times New Roman';
+        font-size: 12pt
+    }
+
+    span.Hyperlink {
+        text-decoration: underline;
+        color: #0000ff
+    }
+
+    span.Strong {
+        font-weight: bold
+    }
+
+    span.UnresolvedMention {
+        color: #605e5c;
+        background-color: #e1dfdd
+    }
+</style>
+
+<body>
+    {% include 'include/header.html' %}
+
+
+    <div style="max-width: 1380px; margin: 2rem auto; padding: 0 40px;">
+
+
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:center">
+            <span style="font-family:Tahoma">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Дата последнего обновления: 23</span><span
+                style="font-family:Tahoma">&#xa0;</span><span style="font-family:Tahoma">июня</span><span
+                style="font-family:Tahoma">&#xa0;</span><span style="font-family:Tahoma">2023 г.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Добро пожаловать в Alaget Taxi! Обеспечение конфиденциальности ваших
+                персональных данных - важный принцип нашей работы. В этой политике описано, как мы обрабатываем ваши
+                персональные данные, какие данные мы собираем, с какими целями их используем и передаем, а также указаны
+                ваши права и ваш выбор в отношении ваших данных.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Настоящая Политика конфиденциальности распространяется на наши Услуги
+                независимо от места их предоставления. Мы обязуемся соблюдать местное законодательство в отношении всех
+                процессов, описанных в политике. В случае несоответствия между настоящей политикой и местным
+                законодательством мы обязуемся соблюдать местное законодательство в части такого несоответствия.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">В Кыргызской Республике</span><span
+                style="font-family:Tahoma">&#xa0;</span><span style="font-family:Tahoma">Фlaget Taxi предоставляет и
+                контролирует</span><span class="apple-converted-space" style="font-family:Tahoma">&#xa0;</span><span
+                style="font-family:Tahoma">ИП Пайзиев Н.А. (РН: 02647407, ИНН: 22703198300280) («</span><span
+                class="Strong" style="font-family:Tahoma">мы</span><span style="font-family:Tahoma">»).</span><span
+                style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify">
+            <span style="font-family:Tahoma; font-size:10pt">Настоящая политика распространяется на всех пользователей
+                Alaget, включая пользователей сайта по адресу:</span><span class="apple-converted-space"
+                style="font-family:Tahoma; font-size:10pt">&#xa0;</span><a href="https://Alaget.kg/"
+                style="text-decoration:none"><span class="Hyperlink"
+                    style="font-family:Tahoma; font-size:10pt">https://Alaget.kg/</span></a><span
+                class="apple-converted-space" style="font-family:Tahoma; font-size:10pt">&#xa0;</span><span
+                style="font-family:Tahoma; font-size:10pt">(«</span><span class="Strong"
+                style="font-family:Tahoma; font-size:10pt">Cайт</span><span
+                style="font-family:Tahoma; font-size:10pt">»), любого мобильного</span><span
+                style="font-family:Tahoma; font-size:10pt">&#xa0;</span><span
+                style="font-family:Tahoma; font-size:10pt">приложения</span><span
+                style="font-family:Tahoma; font-size:10pt">&#xa0;</span><span
+                style="font-family:Tahoma; font-size:10pt">Alaget («</span><span class="Strong"
+                style="font-family:Tahoma; font-size:10pt">Приложение</span><span
+                style="font-family:Tahoma; font-size:10pt">») и любых услуг, которые мы предоставляем через Сайт или
+                Приложения (совместно именуемых «</span><span class="Strong"
+                style="font-family:Tahoma; font-size:10pt">Услуги</span><span
+                style="font-family:Tahoma; font-size:10pt">»), а также при обращении к нам по телефону, электронной
+                почте, путем переписки, в социальных сетях, лично или при помощи других способов связи. Настоящая
+                политика не распространяется на обработку данных наших работников и сотрудников, корпоративных
+                партнеров, подрядчиков и субподрядчиков, но распространяется на обработку данных наших Водителей.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">В настоящей политике лица, пользующиеся Услугами, именуются «</span><span
+                class="Strong" style="font-family:Tahoma">Пользователями</span><span style="font-family:Tahoma">».
+                Пользователи, заказывающие поездки, именуются «</span><span class="Strong"
+                style="font-family:Tahoma">Пассажирами</span><span style="font-family:Tahoma">», а лица, осуществляющие
+                перевозку Пассажиров, именуются «</span><span class="Strong"
+                style="font-family:Tahoma">Водителями</span><span style="font-family:Tahoma">». Термины, используемые в
+                настоящей политике с заглавной буквы без определений, имеют те же значения, что и в Лицензионном
+                соглашении. Если вы принимаете Лицензионное соглашение, вы соглашаетесь на обработку ваших данных в
+                порядке, описанном в настоящей политике.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Какие данные мы собираем</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Мы собираем три категории данных о вас: данные, которые вы предоставляете
+                нам; данные, которые мы собираем автоматически; и данные, которые мы получаем из других
+                источников.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Мы не собираем и не обрабатываем информацию о вашей расовой или
+                национальной принадлежности, политических взглядах или членстве в каком-либо политическом объединении,
+                религиозных или философских взглядах, членстве в профсоюзе, генетические данные, биометрические данные
+                или данные, касающиеся сексуальной жизни.</span><br /><span style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Данные, которые вы предоставляете</span><span
+                style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">Регистрационные данные и данные профиля</span><span
+                style="font-family:Tahoma">, такие как ваше имя, номер телефона, адрес электронной почты, страна, город,
+                предпочтительный язык, фото профиля. Мы можем собирать номера телефонов для экстренной связи, если это
+                разрешено или требуется законодательством.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">Данные Водителя</span><span style="font-family:Tahoma">, к
+                которым могут относиться данные водительского удостоверения и его статус, информация о транспортном
+                средстве (тип, марка, модель, год производства, цвет, данные технического паспорта, номерной знак, отчет
+                о техническом осмотре транспортного средства, фото транспортного средства), данные документа,
+                удостоверяющего личность (в том числе водительского удостоверения, паспорта, государственных
+                идентификационных номеров), подтверждение личности, подтверждение статуса резидента, фактический адрес,
+                дата рождения, идентификационный номер налогоплательщика, соответствующая страховка, разрешение на
+                работу, личная карточка водителя, платежные или банковские данные</span><span
+                style="font-family:Tahoma">&#xa0;</span><span style="font-family:Tahoma">и прочие документы, которые
+                могут требоваться применимым законодательством. Мы вправе осуществлять проверку личности и (или)
+                анкетных данных, если это разрешено или необходимо в соответствии с законодательством. Для этого может
+                потребоваться сбор и обработка таких данных, как ваша фотография, данные документа, удостоверяющего
+                личность, номер страхового свидетельства и сведения о судимости. Указанную информацию вправе
+                обрабатывать подрядчики от нашего имени.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">Пользовательский контент</span><span
+                style="font-family:Tahoma">, который вы решаете загрузить при использовании Услуг, например,
+                комментарии, рейтинги и отзывы на других Пользователей.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">Информация в сообщениях от вас</span><span
+                style="font-family:Tahoma">,</span><span style="font-family:Tahoma">&#xa0;</span><span
+                style="font-family:Tahoma">к которым</span><span style="font-family:Tahoma">&#xa0;</span><span
+                style="font-family:Tahoma">могут относиться сообщения в чате, электронные письма и записи телефонных
+                звонков, которые мы от вас получаем.</span><br /><span style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Данные, которые мы собираем автоматически</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">Информация о местоположении.</span><span
+                class="apple-converted-space" style="font-family:Tahoma">&#xa0;</span><span
+                style="font-family:Tahoma">Мы собираем данные о местоположении Пользователей для обеспечения поездок,
+                поддержки пользователей, в целях безопасности и борьбы с мошенничеством, а также для выполнения
+                требований законодательства. Мы собираем данные о местоположении (в том числе координаты GPS и данные
+                Wi-Fi) на основе выбранных вами настроек Приложения, разрешений устройства и в зависимости от того,
+                пользуетесь ли вы Приложением как Пассажир или Водитель (если применимо в контексте Услуг, которыми вы
+                пользуетесь):</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– Пассажиры: Мы собираем данные о точном местоположении вашего устройства,
+                когда Приложение работает в активном режиме (Приложение открыто и отображается на дисплее) и когда
+                Приложение работает в фоновом режиме (Приложение открыто, но на дисплее не отображается) с момента
+                поступления вашей заявки на поездку до окончания поездки. Пассажиры могут пользоваться Приложением, не
+                разрешая ему собирать данные о точном местоположении со своих мобильных устройств, посредством прямого
+                ввода адреса или координат точки начала и окончания своей поездки в Приложении. Это может влиять на
+                работу Приложения.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– Водители: Мы собираем данные о точном местоположении вашего устройства,
+                когда Приложение работает в активном режиме (Приложение открыто и отображается на дисплее) и когда
+                Приложение работает в фоновом режиме (Приложение открыто, но не отображается на дисплее) в режиме
+                Водителя. Мы также можем собирать данные о точном местоположении в течение ограниченного времени после
+                того, как вы выйдете из режима Водителя, для выявления и расследования ДТП во время поездки.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">Информация о транзакциях.</span><span
+                class="apple-converted-space" style="font-family:Tahoma; font-weight:bold">&#xa0;</span><span
+                style="font-family:Tahoma">Мы собираем данные о ваших транзакциях, связанных с использованием Услуг,
+                включая тип запрошенных или оказанных Услуг, детали заказа, сведения о платежных транзакциях, дату и
+                время оказания услуги, сумму оплаты, маршрут и пройденное расстояние, а также способ оплаты.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">Информация о использовании Услуг.</span><span
+                class="apple-converted-space" style="font-family:Tahoma; font-weight:bold">&#xa0;</span><span
+                style="font-family:Tahoma">Мы собираем данные об использовании вами Услуг, включая дату и время
+                пользования Приложением, использованные функции Приложения или просмотренные страницы, сбои в работе
+                Приложения или Сайта и иные аспекты пользования. Мы также можем собирать и использовать в маркетинговых
+                целях данные, относящиеся к сторонним сайтам, которые вы посетили, или к услугам, которыми вы
+                пользовались до использования наших Услуг.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">Информация о сообщениях и</span><span class="Strong"
+                style="font-family:Tahoma">&#xa0;</span><span class="Strong"
+                style="font-family:Tahoma">звонках.</span><span class="apple-converted-space"
+                style="font-family:Tahoma">&#xa0;</span><span style="font-family:Tahoma">Мы предоставляем Пользователям
+                возможность общаться друг с другом и с нами посредством Приложения. В целях предоставления данной услуги
+                мы получаем данные о времени и дате сообщений и звонков</span><span
+                style="font-family:Tahoma">&#xa0;</span><span style="font-family:Tahoma">и их содержании. Мы также можем
+                использовать эти данные для поддержки пользователей, для обеспечения безопасности, урегулирования споров
+                между пользователями, улучшения качества наших Услуг, а также в целях аналитики (например, для оценки и
+                повышения эффективности Сайта).</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">Информация об устройстве.</span><span
+                class="apple-converted-space" style="font-family:Tahoma; font-weight:bold">&#xa0;</span><span
+                style="font-family:Tahoma">Мы собираем данные об устройстве, которое вы используете для получения Услуг,
+                например данные о названии вашего устройства, марке и модели, пользовательском посреднике, IP-адресе,
+                операторе мобильной связи, типе сети, настройках часового пояса, языковых настройках, рекламных
+                идентификаторах, типе браузера, операционной системе и ее версии, параметрах экрана, степени
+                заряженности аккумулятора и установленных приложениях, которые могут использоваться в целях
+                аутентификации. Мы также можем собирать данные мобильного датчика, такие как скорость, направление,
+                высота, ускорение, замедление, и другие технические данные.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">Файлы cookie, аналитика и сторонние технологии.</span><span
+                class="apple-converted-space" style="font-family:Tahoma; font-weight:bold">&#xa0;</span><span
+                style="font-family:Tahoma">Мы собираем данные с помощью файлов cookie, пикселей, тегов и аналогичных
+                технологий («</span><span class="Strong" style="font-family:Tahoma">файлы cookie</span><span
+                style="font-family:Tahoma">»). Файлы cookie — это небольшие текстовые файлы, которые веб-сервера
+                размещают на вашем устройстве. Они осуществляют автоматический сбор информации, количественную оценку и
+                анализ вашего использования сайтов и приложений, а также идентифицируют веб-страницы и рекламные
+                объявления, на которые вы переходите. Информация, которую мы получаем посредством файлов cookie,
+                помогает нам совершенствовать ваш пользовательских опыт на Alaget (например, с помощью сохранения ваших
+                предпочтений) и наши маркетинговые программы. Наши подрядчики и деловые партнеры могут использовать
+                данную информацию для отображения рекламных объявлений на ваших устройствах с учетом ваших
+                индивидуальных предпочтений и характеристик. Вы можете удалить файлы cookie и управлять настройками
+                cookie в настройках своего веб-браузера. Однако некоторые файлы cookie не могут быть деактивированы,
+                поскольку от них зависит корректная работа нашего Сайта. Подробнее — в нашей Политике в отношении файлов
+                cookie.</span><span style="font-family:Tahoma">&#xa0;</span><br /><span
+                style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Данные, которые мы получаем из других источников</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">Сторонние услуги.</span><span class="apple-converted-space"
+                style="font-family:Tahoma; font-weight:bold">&#xa0;</span><span style="font-family:Tahoma">Мы можем
+                получать информацию о Пользователях от наших подрядчиков, к которым относятся поставщики услуг по
+                проверке личности и анкетных данных, страховые компании, поставщики финансовых и маркетинговых услуг.
+                Если вы хотите зарегистрироваться с помощью сторонней социальной сети или сервиса авторизации (например,
+                VK, Google), если такой функционал доступен, мы можем получать информацию от этих сервисов. Пожалуйста,
+                обратитесь к политике конфиденциальности соответствующих третьих лиц, чтобы узнать, как они обрабатывают
+                ваши данные.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">Государственные органы.</span><span
+                class="apple-converted-space" style="font-family:Tahoma">&#xa0;</span><span
+                style="font-family:Tahoma">Мы можем получать информацию о Пользователях от правоохранительных и иных
+                государственных органов в рамках поступившего от них запроса, в ходе судебного производства и в иных
+                случаях, предусмотренных законодательством.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">Другие Пользователи или третьи лица.</span><span
+                class="apple-converted-space" style="font-family:Tahoma">&#xa0;</span><span
+                style="font-family:Tahoma">Иногда Пользователи или иные лица могут предоставлять нам информацию о вас, в
+                том числе через службу поддержки либо в связи с претензиями или спорами. Мы храним и используем такую
+                информацию только в том случае, если мы могли бы получить ее от вас на законных основаниях. Кроме того,
+                мы обязуемся предпринять необходимые действия, оправданные в сложившихся обстоятельствах, чтобы сообщить
+                вам о получении такой информации.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Как мы используем ваши данные</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Мы используем собранные персональные данные:</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">1. Для предоставления возможности пользования нашими
+                Услугами</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– создания и ведения вашей учетной записи, настроек и предпочтений;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– проверки вашей личности;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– обеспечения возможности оказывать услуги по перевозке или иные услуг (в
+                зависимости от обстоятельств);</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– расчета цен и осуществления платежей;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– обеспечения возможности обмена сообщениями между Пользователями;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– поддержки Пользователей;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– отправки сообщений немаркетингового характера об Услугах;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– обеспечения доступности, безопасности и стабильности нашего Приложения и
+                Сайтов, диагностики, предотвращения и решения технических проблем и проблем обслуживания;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– соблюдения законодательных требований, связанных с Услугами и тем, как вы
+                их используете.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">2. Для обеспечения безопасности наших Услуг и
+                Пользователей</span><span class="Strong" style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– предотвращения, выявления и пресечения случаев мошенничества,
+                небезопасных или незаконных действий, нарушения наших политик и правил;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– аутентификации Пользователей;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– проверки соответствия Водителей и их транспортных средств требованиям
+                безопасности;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– защиты персональных данных, прав и законных интересов Alaget и наших
+                Пользователей;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– расследования и урегулирования происшествий, аварий и требований о
+                выплате страхового возмещения.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">3. Для совершенствования существующих и разработки новых
+                фичей и продуктов</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– проведения тестирования, исследований, анализа, разработки и машинного
+                обучения с целью улучшения вашего пользовательского опыта с Alaget;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– сбора обратной связи о вашем пользовательском взаимодействии с
+                Alaget;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– разработки новых продуктов, фичей и услуг.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">4. Для продвижения Alaget и наших Услуг</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– отправки вам маркетинговых писем по электронной почте, текстовых
+                сообщений, push-уведомлений, сообщений внутри приложения и рекламных объявлений;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– персонализации вашего пользовательского опыта, контента и рекламы в
+                Приложении, на нашем Сайте и на сторонних площадках;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– организации конкурсов, мероприятий и прочих рекламных акций.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">О том, как отписаться от маркетинговых сообщений (включая рекламные) – в
+                разделе «Ваши права и варианты выбора».</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">5. Для соблюдения требований законодательства.</span><span
+                class="apple-converted-space" style="font-family:Tahoma; font-weight:bold">&#xa0;</span><span
+                style="font-family:Tahoma">Мы можем использовать ваши персональные данные в целях соблюдения применимого
+                законодательства, нормативно-правовых актов, требований лицензий и отраслевых стандартов, в рамках
+                судебного производства, для ответа на запросы правоохранительных органов и в иных случаях,
+                предусмотренных законодательством.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">6. Автоматизированное принятие решений.</span><span
+                class="apple-converted-space" style="font-family:Tahoma; font-weight:bold">&#xa0;</span><span
+                style="font-family:Tahoma">Мы используем персональные данные для автоматизированного принятия решений в
+                контексте вашего использования Услуг в целях:</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– установления контакта между Водителями и Пассажирами (или другими видами
+                Пользователей в зависимости от контекста) исходя из таких факторов, как доступность и близость по
+                расстоянию;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– определения рейтингов Пользователей и деактивации пользователей с низким
+                рейтингом;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– обнаружения Пользователей, которые совершают мошеннические, небезопасные
+                или причиняющие вред действия;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– формирования рекомендаций средней цены поездки исходя из таких факторов,
+                как расстояние, местоположение и время.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Если это требует законодательство, действия на основе такой обработки
+                данных предпринимаются только после принятия решения человеком и (или) предоставления возможности
+                обжалования соответствующего решения.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Как мы передаем ваши данные</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Мы понимаем, насколько важно соблюдать конфиденциальность ваших
+                персональных данных. В этом разделе мы описываем, в каких случаях и кому мы передаем полученные нами
+                данные.</span><br /><span style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Другим Пользователям</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Определенная информация о Пользователях необходима, чтобы вы могли
+                заказывать и совершать поездки. В частности:</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– информация о Пассажире, предоставляемая Водителю, включает имя и
+                фотографию, рейтинг, адрес начала и окончания поездки, количество поездок, предлагаемую цену,
+                комментарии и контактную информацию.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– информация о Водителе, предоставляемая Пассажиру, включает имя и
+                фотографию, сведения о транспортном средстве и его фотографию, местоположение до и во время поездки,
+                рейтинги и отзывы, количество поездок, контактную информацию.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Мы можем быть обязаны предоставить Пассажирам чеки и счета с указанием
+                такой информации, как место отправления и место назначения, общая продолжительность поездки и пройденное
+                расстояние, детализация общего тарифа, имя водителя и налоговый номер. Мы также указываем иные сведения
+                в таких чеках, если этого требует законодательство.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Для целей иных услуг мы предоставляем другим Пользователям информацию,
+                необходимую для заказа и предоставления таких услуг.</span><br /><span
+                style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Подрядчикам</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Мы можем предоставлять ваши персональные данные нашим подрядчикам в связи с
+                бизнес-целями, в частности для:</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– обработки платежей и осуществления транзакций;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– поддержки пользователей и технической поддержки;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– проверки личности и анкетных данных;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– страхования;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– облачного хранения;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– передачи контента, обмена сообщениями внутри приложения, совершения
+                звонков внутри приложения, push-уведомлений;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– борьбы с мошенничеством;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– рекламы, маркетинга и аналитики;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– получения услуг консультантов, юристов, бухгалтеров, аудиторов и иных
+                специалистов;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– передачи операторам социальных сетей, в том числе VK, в связи с
+                использованием нами их функциональности в Приложении и на сайтах;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– передачи в аэропорты.</span><br /><span
+                style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">В связи с передачей бизнеса</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Мы можем передавать собранные данные в связи со значительной корпоративной
+                сделкой, включая реструктуризацию, слияние, консолидацию или продажу активов, в рамках которой
+                персональные данные входят в состав передаваемых активов. Мы приложим все возможные усилия для того,
+                чтобы любой получатель ваших данных обрабатывал такие данные в соответствии с настоящей
+                политикой.</span><br /><span style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">В силу юридических причин</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Мы можем раскрывать ваши персональные данные, когда это необходимо в
+                целях:</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– соблюдения законодательства, в том числе для ответа на судебные повестки,
+                постановления суда, запросы правоохранительных или иных государственных органов или претензии;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– защиты прав, интересов и безопасности Alaget, наших Пользователей или
+                общественности;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">– соблюдения требований, предусмотренных лицензиями и разрешениями, а также
+                применимых законодательных и иных нормативно-правовых актов.</span><br /><span
+                style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">С вашего согласия</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Мы можем передавать ваши персональные данные в иных целях с вашего согласия
+                или по вашему распоряжению.</span><br /><span style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">После анонимизации</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Мы можем передавать ваши данные после их агрегирования и такой
+                анонимизации, вследствие чего эти данные уже не могут быть связаны с вами, то есть перестают быть
+                персональными.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Ваши права и ваш выбор</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify">
+            <span class="Strong" style="font-family:Tahoma; font-size:10pt">Доступ к вашим данным и их
+                изменение.</span><span class="apple-converted-space"
+                style="font-family:Tahoma; font-size:10pt; font-weight:bold">&#xa0;</span><span
+                style="font-family:Tahoma; font-size:10pt">Вы вправе получать доступ к данным своей учетной записи и к
+                иным данным, которые вы нам предоставили, а также просматривать и изменять их. Вы можете сделать это в
+                настройках своей учетной записи либо обратившись в службу поддержки:</span><span
+                class="apple-converted-space" style="font-family:Tahoma; font-size:10pt">&#xa0;</span><a
+                href="/cdn-cgi/l/email-protection#c9a8a5a0abacb089aba2e7bbbc" style="text-decoration:none"><span
+                    class="Hyperlink" style="font-family:Tahoma; font-size:10pt"><span class="__cf_email__"
+                        data-cfemail="9cfdf0f5fef9e5dcfef7b2eee9">[email&#160;protected]</span></span></a><span
+                style="font-family:Tahoma; font-size:10pt">.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">Предоставление информации о местоположениии.</span><span
+                class="apple-converted-space" style="font-family:Tahoma">&#xa0;</span><span
+                style="font-family:Tahoma">Ваше устройство дает возможность контролировать, какую информацию мы собираем
+                или как мы можем ее использовать. Например, вы можете запретить своему устройству передавать информацию
+                о вашем местоположении</span><span style="font-family:Tahoma">&#xa0;</span><span
+                style="font-family:Tahoma">в настройках устройства. Однако это может повлиять на функциональность
+                Приложения.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">Отключение push-уведомлений.</span><span
+                class="apple-converted-space" style="font-family:Tahoma; font-weight:bold">&#xa0;</span><span
+                style="font-family:Tahoma">Вы можете отказаться от push-уведомлений в настройках своего устройства.
+                Отказ от push-уведомлений может повлиять на использование Услуг (например, вы не получите уведомление о
+                том, что ваш Водитель прибыл на заказ).</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">Отказ от маркетинговых писем и SMS.</span><span
+                class="apple-converted-space" style="font-family:Tahoma; font-weight:bold">&#xa0;</span><span
+                style="font-family:Tahoma">Вы можете отказаться от получения маркетинговых электронных писем и
+                SMS-сообщений, перейдя по ссылке «Отписаться» или используя способ, указанный в таких сообщениях.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">Управление файлами cookie.</span><span
+                class="apple-converted-space" style="font-family:Tahoma">&#xa0;</span><span
+                style="font-family:Tahoma">Вы можете удалять файлы cookie и изменять настройки cookie в своем браузере.
+                Возможно, вам нужно будет отдельно настраивать получение файлов cookie в каждом браузере и на каждом
+                устройстве. Если вы решите удалить файлы cookie или отказаться от них, мы не сможем предоставлять вам
+                все запрашиваемые Услуги.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">Запрет отслеживания (Do Not Track)</span><span
+                style="font-family:Tahoma">. Некоторые браузеры передают сайтам сигналы типа «Do Not Track». Поскольку
+                разные браузеры по-разному активируют данную функциональность, в настоящее время мы не реагируем на
+                такие сигналы.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify">
+            <span class="Strong" style="font-family:Tahoma; font-size:10pt">Удаление учетной записи и
+                данных.</span><span class="apple-converted-space"
+                style="font-family:Tahoma; font-size:10pt; font-weight:bold">&#xa0;</span><span
+                style="font-family:Tahoma; font-size:10pt">Вы можете удалить свою учетную запись в настройках Приложения
+                или</span><span style="font-family:Tahoma; font-size:10pt">&#xa0;</span><span
+                style="font-family:Tahoma; font-size:10pt">обратиться за удалением вашей учетной записи или
+                данных</span><span style="font-family:Tahoma; font-size:10pt">&#xa0;</span><span
+                style="font-family:Tahoma; font-size:10pt">в службу поддержки:</span><span class="apple-converted-space"
+                style="font-family:Tahoma; font-size:10pt">&#xa0;</span><a
+                href="/cdn-cgi/l/email-protection#debfb2b7bcbba79ebcb5f0acab" style="text-decoration:none"><span
+                    class="Hyperlink" style="font-family:Tahoma; font-size:10pt"><span class="__cf_email__"
+                        data-cfemail="7c1d10151e19053c1e17520e09">[email&#160;protected]</span></span></a><span
+                style="font-family:Tahoma; font-size:10pt">. Мы можем попросить вас подтвердить владение учетной записью
+                и пройти проверку личности. В некоторых случаях мы не сможем удалить вашу учетную запись и будем вправе
+                сохранить определенную информацию в законных бизнес-целях, например, для завершения транзакции, с целью
+                совершения которой мы собрали персональные данные, возврата задолженности, выявления угроз
+                кибербезопасности, устранения неполадок или исправления недостатков наших Услуг, обеспечения права на
+                свободу слова или иных прав другого Пользователя, использования исключительно для внутренних нужд в
+                соответствии с контекстом, в котором персональные данные были предоставлены, для предотвращения
+                мошенничества, выполнения законодательных или иных нормативных требований и претензионной работы с связи
+                с Услугами. В этих случаях мы сохраняем данные таким образом, чтобы предотвратить их использование в
+                иных целях.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify">
+            <span class="Strong" style="font-family:Tahoma; font-size:10pt">Направление вопросов или жалоб.</span><span
+                class="apple-converted-space"
+                style="font-family:Tahoma; font-size:10pt; font-weight:bold">&#xa0;</span><span
+                style="font-family:Tahoma; font-size:10pt">Мы готовы ответить на любые ваши вопросы о настоящей политике
+                или порядке обработки нами ваших данных. Мы также готовы рассмотреть любую жалобу касательно обработки
+                нами ваших персональных данных. Вы можете обратиться к нам по адресу:</span><span
+                class="apple-converted-space" style="font-family:Tahoma; font-size:10pt">&#xa0;</span><a
+                href="/cdn-cgi/l/email-protection#690805000b0c10290b02471b1c" style="text-decoration:none"><span
+                    class="Hyperlink" style="font-family:Tahoma; font-size:10pt"><span class="__cf_email__"
+                        data-cfemail="03626f6a61667a4361682d7176">[email&#160;protected]</span></span></a><span
+                style="font-family:Tahoma; font-size:10pt">. Мы ответим на ваше обращение в соответствии с применимым
+                законодательством после надлежащей верификации.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Как мы храним ваши данные</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Мы храним ваши данные в течение того периода, который необходим для
+                предоставления Услуг и достижения иных целей, указанных в настоящей политике.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Сроки хранения различаются в зависимости от типа данных, категории
+                Пользователя и целей, в которых мы используем эти данные.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Когда мы обрабатываем ваши данные для предоставления Услуги, мы храним
+                данные пока ваша учетная запись не удалена. Мы вправе хранить данные Пользователя после удаления учетной
+                записи в соответствии с законодательными или иными нормативными требованиями или по причинам, указанным
+                в настоящей политике, в том числе в разделе «Удаление учетной записи и данных». Например, мы будем
+                хранить ваши данные при наличии непогашенной задолженности по вашей учетной записи. Мы будем хранить
+                информацию о транзакциях (например, о поездках и платежах) в течение срока, необходимого для выполнения
+                налоговых обязательств. Если вы нарушите Лицензионное соглашение или правила Alaget, мы будем вправе
+                хранить ваши данные столько, сколько может потребоваться для проведения расследования и устранения
+                допущенного нарушения. Мы также храним данные с целью предоставления ответа на любые претензии в
+                отношении Услуг.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Как мы защищаем ваши данные</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Мы принимаем обоснованные и надлежащие технические, организационные и
+                физические меры безопасности, соответствующие характеру персональных данных, чтобы защитить ваши данные
+                от потери, кражи, неправомерного использования и несанкционированного доступа, раскрытия, изменения и
+                уничтожения.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Мы регулярно пересматриваем наши меры безопасности с учетом новых
+                технологий и методов. Однако гарантированной безопасности не существует как в сети Интернет, так и за ее
+                пределами. Мы не можем гарантировать безопасность ваших данных, в том числе, обеспечить гарантированную
+                защиту от несанкционированного доступа или действий третьих лиц. При этом мы принимаем коммерчески
+                обоснованные меры, чтобы уровень безопасности ваших данных соответствовали настоящей политике и всем
+                применимым законодательным и иным нормативным требованиям.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Общие сведения</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify">
+            <span class="Strong" style="font-family:Tahoma; font-size:10pt">Защита детей.</span><span
+                class="apple-converted-space"
+                style="font-family:Tahoma; font-size:10pt; font-weight:bold">&#xa0;</span><span
+                style="font-family:Tahoma; font-size:10pt">Наши Услуги предназначены для совершеннолетних, а не для
+                детей. Если нам предоставит персональные данные лицо, которому, насколько нам известно, еще не
+                исполнилось 18 лет, мы примем обоснованные меры, чтобы не допустить последующее использование или
+                раскрытие таких данных и удалить полученные данные. Если вы полагаете, что несовершеннолетний
+                предоставил нам персональные данные, просим вас связаться с нами:</span><span
+                class="apple-converted-space" style="font-family:Tahoma; font-size:10pt">&#xa0;</span><a
+                href="/cdn-cgi/l/email-protection#a1e0cdc8c3c4d8e1c3ca8fd3d4" style="text-decoration:none"><span
+                    class="Hyperlink" style="font-family:Tahoma; font-size:10pt"><span class="__cf_email__"
+                        data-cfemail="c485a8ada6a1bd84a6afeab6b1">[email&#160;protected]</span></span></a><span
+                style="font-family:Tahoma; font-size:10pt">.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span class="Strong" style="font-family:Tahoma">Мониторинг телефонных разговоров.</span><span
+                class="apple-converted-space" style="font-family:Tahoma; font-weight:bold">&#xa0;</span><span
+                style="font-family:Tahoma">В рамках нашей деятельности по контролю качества предоставляемых
+                пользователям услуг телефонные разговоры могут прослушиваться или записываться в ходе обычной
+                коммерческой деятельности. Мы используем записанные телефонные разговоры для контроля качества и
+                обучения.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Сбор данных третьими лицами</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Третьи лица могут использовать технологии автоматического сбора информации
+                (в том числе технологии межсайтового отслеживания), для сбора информации о вас или вашем устройстве. К
+                таким третьим лицам могут относиться Интернет-провайдер, администратор веб-браузера, оператор мобильной
+                связи, производитель мобильного устройства, заказчики Интернет-рекламы и компании, специализирующиеся на
+                анализе данных.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Кроме того, в нашем Приложении и на нашем Сайте могут содержаться ссылки на
+                сторонние сайты и наши учетные записи в социальных сетях. Когда вы переходите по таким ссылкам,
+                соответствующий сайт или социальная сеть может узнать, с какого ресурса вы перешли на их платформу и
+                собирать иные данные. Если вы вошли в Приложение через социальную сеть (если такая возможность
+                доступна), то социальная сеть может установит связь между Alaget и вашей учетной записью в социальной
+                сети. Мы рекомендуем ознакомиться с политикой конфиденциальности таких сторонних платформ перед тем, как
+                переходить по ссылкам в Приложении или на Сайте.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Мы не несем ответственности за применяемые третьими лицами практики в
+                отношении персональных данных. Мы не контролируем ни самих третьих лиц, ни порядок сбора, использования
+                или раскрытия ими ваших данных. Настоящая политика не распространяется на сбор, использование или
+                раскрытие ваших персональных данных третьими лицами. Если у вас есть вопросы о практиках третьих лиц в
+                отношении персональных данных, пожалуйста, обратитесь к соответствующему третьему лицу напрямую.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Изменения</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Мы можем вносить изменения в настоящую политику с учетом изменений в
+                законодательстве или порядке предоставления Услуг. При внесении изменений в Политику конфиденциальности
+                мы уведомим вас о таких изменениях посредством актуализации «Даты последнего обновления» вверху этой
+                страницы, размещения новой Политики конфиденциальности и направления уведомления, предусмотренного
+                применимым законодательством. Мы рекомендуем вам периодически просматривать данную страницу, чтобы быть
+                в курсе наших практик в отношении персональных данных.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Используя Alaget, вы соглашаетесь с актуальными условиями настоящей
+                политики.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Контактные данные</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:6pt; text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">Для пользователей в Кыргызской Республике: ИП Пайзиев Н.А. (РН: 02647407,
+                ИНН: 22703198300280), Баткенская область, Лейлекский район с. Кулуднду ул Ч. Айтматова.</span>
+        </p>
+        <p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify">
+            <span style="font-family:Tahoma; font-size:10pt">Пожалуйста, направляйте вопросы, замечания и запросы,
+                касающиеся этой политики по адресу:</span><span class="apple-converted-space"
+                style="font-family:Tahoma; font-size:10pt">&#xa0;</span><a
+                href="/cdn-cgi/l/email-protection#07466b6e65627e47656c296c60" style="text-decoration:none"><span
+                    class="Hyperlink" style="font-family:Tahoma; font-size:10pt"><span class="__cf_email__"
+                        data-cfemail="01406d6863647841636a2f6a66">[email&#160;protected]</span></span></a><span
+                style="font-family:Tahoma; font-size:10pt">.</span>
+        </p>
+        <p style="text-align:justify; font-size:10pt">
+            <span style="font-family:Tahoma">&#xa0;</span>
+        </p>
+        <p style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net" target="_blank"
+                style="font-size:11px; color: #d0d0d0">Converted to HTML with WordToHTML.net</a></p>
+
+    </div>
+    <!-- preFooter end -->
+    {% include 'include/footer.html' %}
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+        integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
+        data-cf-beacon='{"rayId":"82615ad639d51c9f","r":1,"version":"2023.10.0","token":"4581d6a58cf94e929fad52deda295622"}'
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
+    <script src="{% static 'assets/js/script.js' %}"></script>
+
+</body>
+
+</html>
+
+{%endblock%}

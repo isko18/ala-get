@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Страница не найдена</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0c0c0c; /* Vibrant yellow background */
+            color: #000000; /* Black text color */
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #b8c500;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            color: #f6f4f4; /* Black link color */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="{% static 'assets/img/404.jpg' %}" alt="404 Not Found">
+        <h1>404 - Страница не найдена</h1>
+        <p>Извините, но запрашиваемая вами страница не существует.</p>
+        <p><a href="/" title="Вернуться на главную">Вернуться на главную</a></p>
+    </div>
+</body>
+</html>

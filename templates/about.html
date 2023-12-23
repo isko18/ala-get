@@ -1,0 +1,77 @@
+{%extends 'homepage.html'%}
+{% load static i18n %}
+{%block content%}
+
+{% include 'include/header.html' %}
+
+
+<!-- header end -->
+<!-- main start -->
+<main id="main" class="main">
+  <img id="myElement" class="Mainbackround" src="{{about.banner_image.url}}" alt="" />
+
+  <div style="top: 30%;position: absolute;" class=" taxi mainTitle">
+    <h1 style="font-size: 48px;">{{about.our_mission}}</h1>
+    <p style="font-size: 20px;">{{about.mission_descriptions}}</p>
+  </div>
+  <div style="width: 100%;">
+    <h1></h1>
+  </div>
+  <div class="mainCarImage">
+
+  </div>
+  <div style="position: absolute;right: 40px;bottom: 0%;" class="bot">
+    <h1 style="font-size: 48px;">{{about.vision}}</h1>
+    <p style="font-size: 20px;">{{about.vision_descriptions}}</p>
+  </div>
+</main>
+<!-- main end -->
+
+<section class="MainContainer">
+  <h1 class="aboutPageTitle"> НАШИ ЦЕННОСТИ:</h1>
+  {% for ourmission in ourmission %}
+  <br>
+  <div class="aboutAppCard" style="background-color: white; border-radius: 50px;">
+    <div style="text-align: center; margin-right: 1rem;" class="aboutTitle">
+      <div>
+        <img src="{{ourmission.image.url}}" alt="">
+      </div>
+      <h1>{{ourmission.numbers}}</h1>
+    </div>
+
+    <div class="aboutTitle">
+      <h1>{{ourmission.title}}</h1>
+      <h2>{{ourmission.descriptions|default:""}}</h2>
+      <p>{{ourmission.descriptions2}}
+      </p>
+    </div>
+
+  </div>
+  {% endfor %}
+</section>
+<!-- Proof end -->
+<!-- preFooter start -->
+<section class="preFooter">
+  <div class="taxi preFooterLeft">
+    <h1>{{earn.title}}</h1>
+
+    <br />
+    <p>{{earn.descriptions}}</p>
+    <br />
+    <button class="orangeBGbutton"><a href="https://play.google.com/store/apps/details?id=com.alaget.taxi2&pcampaignid=web_share">{{settings.install}}</a></button>
+  </div>
+  <div style="width: 100%;"></div>
+  <div class="preFooterRigth">
+    <div class="taxiPreFooterImg">
+      <img src="{{earn.image.url}}" alt="" />
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- preFooter end -->
+{% include 'include/footer.html' %}
+
+{%endblock%}

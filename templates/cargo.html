@@ -1,0 +1,115 @@
+{%extends 'homepage.html'%}
+{%load static%}
+{%block content%}
+
+{% include 'include/header.html' %}
+
+  <!-- header end -->
+  <!-- main start -->
+  <main id="main" class="main">
+    <img id="myElement" class="Mainbackround" src="{{cargo.banner_image.url}}" alt="" />
+    <div class="overlay"></div>
+    <div class="mainTitle">
+      <h2 class="white">{{cargo.title}}</h2>
+
+      <h3 class="white">
+        {{cargo.descriptions}}
+      </h3>
+      <div class="mainButton borderYellow"><a href="https://play.google.com/store/apps/details?id=com.alaget.taxi2&pcampaignid=web_share">{{settings.install}}</a></div>
+    </div>
+    <div style="width: 100%;"></div>
+    <div class="mainCarImage">
+
+    </div>
+  </main>
+  <!-- main end -->
+
+  <!-- service start -->
+  <section class="cardgoProof">
+    <h1 class="yellow">{{profitables.title2}}</h1>
+    <br>
+    <br>
+    <div class="cardgoProofContiner">
+      {% for profitable in profitable %}
+      <div class="cargoCard">
+        <div><img src="{{profitable.image.url}}" alt=""></div>
+        <h1>{{profitable.title}}</h1>
+        <h2>{{profitable.descriptions}}</h2>
+
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  <!-- service end -->
+  <br><br>
+
+  <section class="darkSection">
+    <div class="Instruktion">
+      <h1>{{cargo.title2}}</h1>
+      <p></p>
+ 
+    </div>
+    <section class="instructionSection">
+      <h1>{{taxi.title_order2}}</h1>
+      <br><br><br>
+      <div class="instructionContainer">
+        {% for orderintercity in orderintercity %}
+        <div class="instructionCard Dark">
+          <div class="instrukionImage"><img src="{{orderintercity.image.url}}" alt=""></div>
+          <h1 class="white">
+            <div class="stepItem white">
+              <div>{{orderintercity.numbers}}</div>
+            </div>{{orderintercity.title}}
+          </h1>
+          <p class='white'>{{orderintercity.descriptions}}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+  </section>
+
+  <!-- Proof start -->
+  <section class="Proof">
+    <div class="ProofContiner">
+      <h1>{{whys.why}}</h1>
+      <br />
+      <br />
+      <div class="proofList">
+        {% for why in why %}
+        <div class="proofListItem">
+          <div class="proofItemTop">
+            <h1>{{why.title}}</h1>
+            <img src="{{why.image.url}}" alt="" />
+          </div>
+          <br />
+          <div class="proofItemMain">
+            <p>{{why.descriptions}}
+            </p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <!-- Proof end -->
+  <!-- preFooter start -->
+  <section class="preFooter">
+    <div class="taxi preFooterLeft">
+      <h1>{{earn.title}}</h1>
+
+      <br />
+      <p>{{earn.descriptions}}</p>
+      <br />
+      <button class="orangeBGbutton"><a href="https://play.google.com/store/apps/details?id=com.alaget.taxi2&pcampaignid=web_share">{{settings.install}}</a></button>
+    </div>
+    <div style="width: 100%;"></div>
+    <div class="preFooterRigth">
+      <div class="taxiPreFooterImg">
+        <img src="{{earn.image.url}}" alt="" />
+      </div>
+    </div>
+  </section>
+  <!-- preFooter end -->
+  {% include 'include/footer.html' %}
+
+  {%endblock%}

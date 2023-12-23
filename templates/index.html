@@ -1,0 +1,162 @@
+{%extends 'homepage.html'%}
+{%load static%}
+{%block content%}
+
+{% include 'include/header.html' %}
+
+
+<!-- header end -->
+
+<!-- main start -->
+<main id="main" class="main">
+  <img id="myElement" class="Mainbackround" src="{{settings.banner_image.url}}" alt="" />
+  <div class="overlay"></div>
+  <div class="mainTitle">
+    <h1>{{settings.title}}</h1>
+    <h2>{{settings.title2}}</h2>
+    <h3>
+      {{settings.descriptions}}
+    </h3>
+    <div class="mainButton"><a href="https://play.google.com/store/apps/details?id=com.alaget.taxi2&pcampaignid=web_share">{{settings.install}}</a></div>
+  </div>
+  <div class="mainCarImage">
+    <img src="{{settings.banner_image2.url}}" alt="" />
+  </div>
+</main>
+<!-- main end -->
+<!-- service start -->
+<section class="service">
+  <div class="serviceItem">
+    <img src="{% static 'assets/icons/icon50-removebg-preview (1).png' %}" width="63px" alt="" />
+    <p>{{settings.advantage1}}</p>
+  </div>
+  <div class="serviceItem">
+    <img src="{% static 'assets/icons/Слой_x0020_1.svg' %}" alt="" />
+    <p>{{settings.advantage2}}</p>
+  </div>
+  <div class="serviceItem">
+    <img src="{% static 'assets/icons/Group 491.svg' %}" alt="" />
+    <p>{{settings.advantage3}}</p>
+  </div>
+</section>
+<!-- service end -->
+<br><br>
+<!-- swiper start -->
+<section style="
+  background: white;
+  border-radius: 50px;
+">
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      {% for slider in slider %}
+      <!-- Slides -->
+      <div class="swiper-slide" style="width: 390px;">
+        <div class="aboutAppCard">
+          <div class="aboutCardLeft">
+            <h1>{{slider.title_slider}}</h1>
+            <div class="slideNum">
+              <h1>{{slider.numbering}} {{slider.title_slider2}}</h1>
+            </div>
+            <p>
+              {{slider.descriptions}}
+            </p>
+            <h2></h2>
+          </div>
+          <div class="aboutCardRight">
+            <div class="aboutCardImage">
+              <img src="{{slider.image_slider.url}}" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <rect x="24" y="24" width="24" height="24" rx="5" transform="rotate(180 24 24)" fill="#F8AE21" />
+        <path
+          d="M18 13C18.5523 13 19 12.5523 19 12C19 11.4477 18.5523 11 18 11V13ZM4.79289 11.2929C4.40237 11.6834 4.40237 12.3166 4.79289 12.7071L11.1569 19.0711C11.5474 19.4616 12.1805 19.4616 12.5711 19.0711C12.9616 18.6805 12.9616 18.0474 12.5711 17.6569L6.91421 12L12.5711 6.34315C12.9616 5.95262 12.9616 5.31946 12.5711 4.92893C12.1805 4.53841 11.5474 4.53841 11.1569 4.92893L4.79289 11.2929ZM18 11H5.5V13H18V11Z"
+          fill="white" />
+      </svg>
+    </div>
+    <div class="swiper-button-next">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <rect width="24" height="24" rx="5" fill="#F8AE21" />
+        <path
+          d="M6 11C5.44772 11 5 11.4477 5 12C5 12.5523 5.44772 13 6 13V11ZM19.2071 12.7071C19.5976 12.3166 19.5976 11.6834 19.2071 11.2929L12.8431 4.92893C12.4526 4.53841 11.8195 4.53841 11.4289 4.92893C11.0384 5.31946 11.0384 5.95262 11.4289 6.34315L17.0858 12L11.4289 17.6569C11.0384 18.0474 11.0384 18.6805 11.4289 19.0711C11.8195 19.4616 12.4526 19.4616 12.8431 19.0711L19.2071 12.7071ZM6 13H18.5V11H6V13Z"
+          fill="white" />
+      </svg>
+    </div>
+
+    <!-- If we need scrollbar -->
+    <!-- <div class="swiper-scrollbar"></div> -->
+  </div>
+</section>
+<!-- swiper end -->
+<!-- downloadApp start -->
+<section class="downloadApp">
+  <div class="downloadAppLeft">
+    <h1>{{settings.made_title}}</h1>
+    <p>
+      {{settings.made_descriptions}}
+    </p>
+    <button class="orangeBGbutton"> <a href="https://play.google.com/store/apps/details?id=com.alaget.taxi2&pcampaignid=web_share">{{settings.install}}</a></button>
+  </div>
+  <div class="downloadAppRight">
+    <img src="{% static 'assets/img/Стойка в кривых 4 (1).svg' %}" alt="" />
+  </div>
+</section>
+<!-- downloadApp end -->
+<!-- Proof start -->
+<section class="Proof">
+  <div class="ProofContiner">
+    <h1>{{whys.why}}</h1>
+    <br />
+    <br />
+    <div class="proofList">
+      {% for why in why %}
+      <div class="proofListItem">
+        <div class="proofItemTop">
+          <h1>{{why.title}}</h1>
+          <img src="{{why.image.url}}" alt="" />
+        </div>
+        <br />
+        <div class="proofItemMain">
+          <p>{{why.descriptions}}
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- Proof end -->
+<!-- preFooter start -->
+<section class="preFooter">
+  <div class="preFooterLeft">
+    <p>
+      {{environment.title}} <u>{{environment.descriptions}}</u> {{environment.descriptions2|default:" "}}
+    </p>
+    <br />
+    <p>{{environment.descriptions3}}</p>
+    <br />
+    <button class="orangeBGbutton"> <a href="https://play.google.com/store/apps/details?id=com.alaget.taxi2&pcampaignid=web_share">{{settings.install}}</a></button>
+  </div>
+  <div class="preFooterRigth">
+    <div class="preFooterImage">
+      {% if language == "ky" %}
+        <img src="{% static 'assets/img/Стойка в кривых 4 (1).svg' %}" alt="" />
+      {% else %}
+        <img src="{{environment.image.url}}" alt="" />
+      {% endif %}
+    </div>
+  </div>
+</section>
+<!-- preFooter end -->
+
+{% include 'include/footer.html' %}
+
+{%endblock%}

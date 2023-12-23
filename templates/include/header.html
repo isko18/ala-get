@@ -1,0 +1,89 @@
+{% load static i18n%}
+  <!-- header start -->
+  <header class="header">
+    <nav>
+      <div class="logo"><img src="{{settings.logo.url}}" alt="" /></div>
+      <ul class="desc">
+        <a href="{% url 'index' %}">
+          <li class="active">{{base.title1}}</li>
+        </a>
+        <a href="{% url 'taxi' %}">
+          <li>{{base.title2}}</li>
+        </a>
+        <a href="{% url 'cargo' %}">
+          <li>{{base.title3}} </li>
+        </a>
+        <a href="{% url 'delivery' %}">
+          <li>{{base.title4}}</li>
+        </a>
+        <a href="{% url 'about' %}">
+          <li>{{base.title5}}</li>
+        </a>
+        <a href="{% url 'contact' %}">
+          <li>{{base.title6 }}</li>
+        </a>
+        <a href="{% url 'partners' %}">
+          <li>{{base.title9}}</li>
+        </a>
+        
+
+      </ul>
+      <div>
+        <div class="burgerMenu" onclick="openSideBar()">
+          <img width="50px" src="https://cdn-icons-png.flaticon.com/512/5251/5251840.png " alt="">
+        </div>
+      </div>
+
+
+      <div class="translate">
+        <button class="loacithionBth"><span class="language-switch" data-language="ru">RU</span></button>
+        <span>|</span>
+        <button class="loacithionBth"><span class="language-switch" data-language="kg">KG</span></button>
+    </div>
+      <div class="beTaksist">
+        <a href="{% url 'betaxist' %}">
+          <p>{{base.title7}}</p>
+        </a>
+
+      </div>
+    </nav>
+
+    </div>
+
+
+
+
+  </header>
+
+
+  <div id="mobileMenu" class="mobileMenuDisabled">
+    <div onclick="closeSideBar()" class="mobileClose">
+      x
+    </div>
+    <br><br>
+    <ul class="desc">
+      <a href="{% url 'index' %}">
+        <li class="active">{{base.title1}}</li>
+      </a>
+      <a href="{% url 'taxi' %}">
+        <li>{{base.title2}}</li>
+      </a>
+      <a href="{% url 'cargo' %}">
+        <li>{{base.title3}} </li>
+      </a>
+      <a href="{% url 'delivery' %}">
+        <li>{{base.title4}}</li>
+      </a>
+      <a href="{% url 'about' %}">
+        <li>{{base.title5}}</li>
+      </a>
+      <a href="{% url 'contact' %}">
+        <li>{{base.title6 }}</li>
+      </a>
+      <a href="{% url 'partners' %}">
+        <li>{{base.title9}}</li>
+      </a>
+
+
+    </ul>
+  </div>
